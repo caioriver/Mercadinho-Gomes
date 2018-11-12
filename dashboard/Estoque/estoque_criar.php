@@ -1,8 +1,9 @@
 <!-- header -->
 <?php
 require_once "../Constructs/header.php";
-?>
 
+
+?>
 <html>
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
 
@@ -56,6 +57,7 @@ require_once "../Constructs/header.php";
                 echo'<a>'.$_SESSION['nome-e'].'</a>';
                 unset($_SESSION['nome-e']);
             }?>
+            
             <input required type="text" name="nome" class="form-control" placeholder="Nome do item">
             <label class="label-nome">Categoria</label>
                 <select class="form-control" name="cat">
@@ -82,15 +84,12 @@ require_once "../Constructs/header.php";
                     <input type="file" name="file-img" class=" form-control form-img">
             
                     <label class="label-preco">Preço</label>
-        <?php if (!(empty($_SESSION['preco-e']))) {
-          echo '<a>'.$_SESSION['preco-e'].'</a>';
-          unset($_SESSION['preco-e']);
-      }
-          ?>
+            <?php if (!(empty($_SESSION['preco-e']))) {
+            echo '<a>'.$_SESSION['preco-e'].'</a>';
+            unset($_SESSION['preco-e']);
+            }
+            ?>
             <input type="text" name="preco" class="form-control imput-debit" placeholder="Ex 00,00 (R$)">
-        
-            
-
             <button type="submit" class="btn btn-primary bt-valid">Validar</button>
             <input type="button" value="Sair" class="btn btn-primary" onclick="window.location.href='estoque_CRUD.php'" >
             <button type="reset" class="btn btn-primary bt-valid">Limpar</button>

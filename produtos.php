@@ -1,3 +1,6 @@
+    <?php
+require_once "./fun/listar_produtos.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -64,139 +67,43 @@
                 <div class="col-sm-12">
                     <h1>PRODUTOS</h1>
                 </div>
+                <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST" name="pesquisa">
                 <div class="produtos">
                     <div class="row my-5">
                         <div class="row col-12 col-md-12 col-lg-6 col-sm-12 mb-3 text-center justify-content-start">
                             <div class="col-1 mr-5">Categoria</div>
-                            <select class="col-5 ml-3 btn-cadastro" name="" id="">
-                                <option value="">CATEGORIAS</option>
+                            <select class="col-5 ml-3 btn-cadastro" name="catg" id="">
+                            <option value="hortfruit">Horti-Fruti</option>
+                            <option value="congelados">Congelados</option>
                             </select>
                         </div>
                         <div class="row col-12 col-md-12 col-lg-6 col-sm-12 text-center justify-content-start">
                             <div class="col-1 mr-5">Pesquisa</div>
-                            <form action="" method="POST" name="pesquisa">
+                            
                                 <input type="text" class="col btn-cadastro">
                             </form>
                         </div>
                     </div>
                     <div class="container">
-                        <form action="" method="POST">
-                            <div class="row mb-4">
+                        <form action="" method="GET">
+                        <div class="row mb-4">
+                            <?php while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
                                 <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
+                                    <label for="" class="image-checkbox" >
+                                        <img class="img-fluid img-produtos" src="dashboard/Estoque/images/<?php $a = 1; $a = $a+1; echo($list_1['img']);?>"
                                             alt="" width="300">
                                         <input type="checkbox" name="produto[]" id="nomedoproduto">
                                         <i><img class="imagem" src="icones/checked.png" alt=""></i>
                                     </label>
-                                    <p>Quantidade: ___</p>
+                                    <p>Quantidade:</p>
+                                    <input type="number" name="qx[]">
                                 </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
+
+                                <?php if($a == 2) {
+                                    echo'<h1>'.$a.'</h1>';
+                                } endwhile;
+                                ?>
                                 </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                            <!-- </div>
-                            <div class="row mb-4"> -->
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                            <!-- </div>
-                            <div class="row mb-4"> -->
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                            <!-- </div>
-                            <div class="row mb-4"> -->
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                                <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
-                                    <label for="" class="image-checkbox">
-                                        <img class="img-fluid img-produtos" src="img/197119-qual-a-importancia-de-ter-os-expositores-certos-para-hortifruti.jpg"
-                                            alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
-                                        <i><img class="imagem" src="icones/checked.png" alt=""></i>
-                                    </label>
-                                    <p>Quantidade: ___</p>
-                                </div>
-                            </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-out">
                                     <div class="caixaInput">
@@ -215,16 +122,11 @@
                 </div>
             </div>
         </div>
-
-        
-
-        
-
         <!-- Footer -->
         <footer>
         <?php
             require_once "Templates/footer.php";
-        ?>
+            ?>
         </footer>
         <!-- Fim do Footer -->
 
@@ -233,5 +135,4 @@
         <script src="js/bootstrap.js"></script>
         <script src="js/functions.js"></script>
     </body>
-
 </html>

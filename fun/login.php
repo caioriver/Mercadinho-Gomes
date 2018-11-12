@@ -55,6 +55,8 @@ $val = new validacao;
                 
                 if ($user_1['pass'] == sha1($_POST['log-pass'])) {
                     header("Location: ../dashboard/");
+                    $_SESSION['id'] = $user_1['id'];
+                    $_SESSION['mail'] = $user_1['mail'];
             
                 } else{
                     $_SESSION['e-log-pass'] = "Senha inválida";

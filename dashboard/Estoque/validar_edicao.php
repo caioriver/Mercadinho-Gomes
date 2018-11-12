@@ -15,7 +15,7 @@ if (empty($_POST)) {
         $_SESSION['adm-pass-e'] = $val->validarSenha($_POST['adm-pass']);
         $_SESSION['file-img-e'] = $val->validarFile($_FILES['file-img']);
         $_SESSION['preco-e'] = $val->validarDec($_POST['preco'],'Preço');
-
+        $id = $_SESSION['id-up'];
 
         $file_ex = strtolower(substr($_FILES['file-img']['name'], -4));
         $fileNome = sha1(time()).$file_ex;
@@ -40,7 +40,7 @@ if (empty($_POST)) {
 
         if (empty($superadm)) {
             $_SESSION['dbug'] = "Dados inválidos";
-            header ("Location: estoque_editar.php");  
+            header ("Location: estoque_editar.php?id=$id");
         } else if (sha1($_POST['adm-pass']) == $superadm['pass']) {
             if  ($_SESSION['preco-e'] == NULL && $_SESSION['nome-e'] == NULL 
             && $_SESSION['adm-mail-e'] == NULL && $_SESSION['adm-pass-e'] == NULL)
@@ -66,7 +66,7 @@ if (empty($_POST)) {
             {   
                 
                 $_SESSION['dbug'] = "Dados inválidos";
-                header ("Location: estoque_editar.php");  
+                header ("Location: estoque_editar.php?id=$id");
                 
                 
                 }
@@ -74,15 +74,15 @@ if (empty($_POST)) {
         } else {
             $_SESSION['adm-mai-el'] ="Senha incorreta";
             $_SESSION['dbug'] = "Dados inválidos";
-            header ("Location: estoque_editar.php");  
+            header ("Location: estoque_editar.php?id=$id");
                 
         }   
     }   
          else {
             $_SESSION['dbug'] = "Dados inválidos";
                 $_SESSION['adm-pass-e'] = "Senha inváloda";
-                header ("Location: estoque_editar.php");
-    }
+                header ("Location: estoque_editar.php?id=$id");
+            }
 
         
 

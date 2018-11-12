@@ -2,8 +2,8 @@
 <?php
 require_once "../Constructs/header.php";
 require_once "listar_estoque.php";
+unset($_SESSION['user-edit']);
 ?>
-
 <html>
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
 
@@ -111,7 +111,7 @@ require_once "listar_estoque.php";
                     <img class="form-icon" alt="edit-icon" src="../Images/delete.png" >
                 Deletar
                 </a>
-                <input type="checkbox" value ="<?php echo($list_1['id']); ?>" name='box[]'></td>
+                <input type="checkbox" value ="<?php echo($list_1['id']);?>" name='box[]'></td>
             </tr>
                 <?php endwhile; ?>
             </div>

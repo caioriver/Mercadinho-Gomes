@@ -108,7 +108,7 @@ require_once "listar_usuarios.php";
                     <img class="form-icon" alt="edit-icon" src="../Images/delete.png" >
                 Deletar
                 </a>
-                <input type="checkbox" value ="<?php echo($list_1['id']); ?>" name='box[]'            </td>
+                <input type="checkbox" value ="<?php echo($list_1['id']);?>" name='box[]'></td>
             </tr>
 <?php endwhile; ?>
            </form>

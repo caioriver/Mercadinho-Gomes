@@ -2,6 +2,7 @@
 <?php
 require_once "../Constructs/header.php";
 require_once "listar_admin.php";
+unset($_SESSION['user-edit']);
 ?>
 <html>
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">

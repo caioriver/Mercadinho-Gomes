@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <!-- Bootstrap local css comun-->
-        <link rel="stylesheet" href="../../bootstrap_4/node_modules/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/bootstrap.css">
         <link rel="stylesheet" href="../CSS/all.css">
 
     </head>

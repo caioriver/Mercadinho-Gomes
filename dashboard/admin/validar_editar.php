@@ -18,6 +18,8 @@ if (empty($_POST)) {
         $_SESSION['c-pass-e'] = $val->comparaDois($_POST['c-pass'],$_POST['pass'],'Senha');
         $_SESSION['adm-pass-e'] = $val->validarSenha($_POST['adm-pass']);
         var_dump($_SESSION['nome-e']);
+        $id = $_SESSION['id-up'];
+
 
 // LOGICA PARA BANCO
 
@@ -29,7 +31,7 @@ if (empty($_POST)) {
 
          var_dump($superadm);       
         if (empty($superadm)) {
-            header ("Location: admin_CRUD.php");
+            header ("Location: admin_editar.php?id=$id");
             $_SESSION['dbug'] = "Dados invválidos";
             $_SESSION['adm-pass-e'] = "senha inválida";
         } else if ($_SESSION['nome-e'] == NULL && $_SESSION['mail-e'] == NULL && $_SESSION['c-mail-e'] == NULL 
@@ -58,10 +60,10 @@ if (empty($_POST)) {
                 // $stmt_2->bindValue(':debit',$fileNome);
                     
                 $_SESSION['dbug'] = "Dados cadastrados";
-                header ("Location: admin_CRUD.php");
+                header ("Location: admin_editar.php?id=$id");
             } else 
             {
-                header ("Location: admin_CRUD.php");
+                header ("Location: admin_editar.php?id=$id");
                 $_SESSION['dbug'] = "Dados invválidos";
 
                 
