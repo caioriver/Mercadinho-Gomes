@@ -54,7 +54,7 @@ $val = new validacao;
             if (!(empty($user_1))) {
                 
                 if ($user_1['pass'] == sha1($_POST['log-pass'])) {
-                    header("Location: ../dashboard/");
+                    header("Location: ../");
                     $_SESSION['id'] = $user_1['id'];
                     $_SESSION['mail'] = $user_1['mail'];
             
