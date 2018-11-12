@@ -16,6 +16,7 @@ $val = new validacao;
         $stmt_1->bindValue(':mail',$_POST['log-mail']);
         $stmt_1->execute();
         $user_1 = $stmt_1->fetch(PDO::FETCH_ASSOC);
+        $_SESSION['type-user'] = 'super';
         
         if (!(empty($user_1))) {
             
@@ -33,7 +34,7 @@ $val = new validacao;
         $stmt_1->bindValue(':mail',$_POST['log-mail']);
         $stmt_1->execute();
         $user_1 = $stmt_1->fetch(PDO::FETCH_ASSOC);
-        
+        $_SESSION['type-user'] = 'admin';
         if (!(empty($user_1))) {
             
             if ($user_1['pass'] == sha1($_POST['log-pass'])) {
