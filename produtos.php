@@ -80,7 +80,7 @@ require_once "./fun/listar_produtos.php";
                         <div class="row col-12 col-md-12 col-lg-6 col-sm-12 text-center justify-content-start">
                             <div class="col-1 mr-5">Pesquisa</div>
                             
-                                <input type="text" class="col btn-cadastro">
+                                <input type="text" name="like" class="col btn-cadastro">
                             </form>
                         </div>
                     </div>
