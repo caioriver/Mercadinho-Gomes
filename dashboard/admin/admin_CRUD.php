@@ -66,19 +66,21 @@ require_once "listar_admin.php";
         
         </div>
         </div> <!--Fim da linha-->
-    
+        </form>
+        <form method= "GET" action = "delete_multi.php">
     <button type="submit" class="btn btn-primary ">Buscar</button>
-    <button type="submit" class="btn btn-primary">Deletar mutiplos</button>
+    <input type=submit  class="btn btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
     <button type="submit" class="btn btn-primary">Exportar</button>
     <input type="button" value="Adicionar" class="btn btn-primary" onclick="window.location.href='admin_criar.php'" >
 
             </div>
         </div>
         </div>
-        </form>
+        
 </div>
 </section>
 <section>
+
     <div class="table-control table-responsive">
     <table class="table">
         <thead>
@@ -105,8 +107,11 @@ require_once "listar_admin.php";
                     <img class="form-icon" alt="edit-icon" src="../Images/delete.png" >
                 Deletar
                 </a>
-                <input type="checkbox">
+                <input type="checkbox" value ="<?php echo($list_1['id']);?>" name="box[]">
             </td>
             </tr>
 <?php endwhile; ?>
-           
+
+</form>
+</section>
+<?php

@@ -67,19 +67,20 @@ require_once "listar_estoque.php";
                     <option value = "4">Maior dívida</option>
                     <option value = "5">Menor dívida</option>
                 </select>
-        
+            </form>      
         </div>
 
         </div> <!--Fim da linha-->
-    
+
+    <form method= "GET" action = "delete_multi.php">  
     <button type="submit" class="btn btn-primary ">Buscar</button>
-    <button type="submit" class="btn btn-primary">Deletar mutiplos</button>
+    <input type=submit  class="btn btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
     <button type="submit" class="btn btn-primary">Exportar</button>
     <input type="button" value="Adicionar" class="btn btn-primary" onclick="window.location.href='estoque_criar.php'" >
             </div>
         </div>
         </div>
-        </form>
+        
 </div>
 </section>
 <section>
@@ -110,9 +111,9 @@ require_once "listar_estoque.php";
                     <img class="form-icon" alt="edit-icon" src="../Images/delete.png" >
                 Deletar
                 </a>
-                <input type="checkbox">
-            </td>
+                <input type="checkbox" value ="<?php echo($list_1['id']); ?>" name='box[]'></td>
             </tr>
                 <?php endwhile; ?>
             </div>
+</form>
 </section>

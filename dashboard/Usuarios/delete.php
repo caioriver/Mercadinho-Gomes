@@ -2,6 +2,7 @@
 require_once "../Constructs/header.php";
 require_once "../../fun/_fixed.php";
 $connect = db_connect();
+if (($_SESSION['type-user'] == 'super')) {
 // pega o ID da URL
 $id = isset($_GET['id']) ? (int) $_GET['id'] : null;
  
@@ -31,4 +32,7 @@ else
 {
     echo "Erro ao remover";
     print_r($stmt->errorInfo());
+}
+}else {
+    header('Location: usuarios_CRUD.php');
 }

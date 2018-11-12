@@ -3,6 +3,10 @@
 require_once "../Constructs/header.php";
 require_once "../../fun/_fixed.php";
 $connect = db_connect();
+session_start();
+if ($_SESSION['type-super'] != 'super') {
+    header("Location: admin_CRUD.php");
+}
 // pega o ID da URL
 $id = isset($_GET['id']) ? (int) $_GET['id'] : null;
  

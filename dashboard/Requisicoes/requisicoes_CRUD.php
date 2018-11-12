@@ -102,8 +102,7 @@ require_once "listar_requisicoes.php";
             <td class="table-preco">000.000</td>
             <td>
                 <a class="table-edit-icon" href="estoque_editar.php">
-                <input type="checkbox">
-            </td>
+                <input type="checkbox" value ="<?php echo($list_1['id']); ?>" name='box[]'            </td>
             </tr>
                 <?php endwhile; ?>
             </div>

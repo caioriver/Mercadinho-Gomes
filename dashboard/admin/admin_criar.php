@@ -1,6 +1,10 @@
 <!-- header -->
 <?php
 require_once "../Constructs/header.php";
+if ($_SESSION['type-user'] != 'super') {
+     header("Location: ../Principal/principal.php");
+}
+
 ?>
 <link rel="stylesheet" type="text/css" href="../CSS/principal.css">
 

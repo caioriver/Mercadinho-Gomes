@@ -48,13 +48,15 @@ if (empty($_POST)) {
                     $query_2 = 'UPDATE estoque 
                     SET nome = :nome,
                     catg = :catg,
-                    img = :img
+                    img = :img,
+                    preco = :preco
                     WHERE id = :id;';
                     $stmt_2 = $conect->prepare($query_2);
                     $stmt_2->bindValue(':nome',$_POST['nome']);
                     $stmt_2->bindValue(':catg',$_POST['catg']);
                     $stmt_2->bindValue(':img',$fileNome);
                     $stmt_2->bindValue(':id',$_SESSION['id-up']);
+                    $stmt_2->bindValue(':preco',$_POST['preco']);
                     $stmt_2->execute();
                     
                 $_SESSION['dbug'] = "Dados cadastrados";

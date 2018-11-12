@@ -73,7 +73,7 @@ $_SESSION['id-up'] = $id;
             }?>
             <input value="<?php  echo $user_1['nome'];?>" required type="text" name="nome" class="form-control" placeholder="Nome do item">
             <label class="label-nome">Categoria</label>
-                <select class="form-control" name="cat">
+                <select class="form-control" name="catg">
                     <option value="hortfruit">Horti-Fruti</option>
                     <option value="congelados">Congelados</option>
                 </select>
