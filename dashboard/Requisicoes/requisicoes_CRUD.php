@@ -79,8 +79,8 @@ require_once "listar_requisicoes.php";
                 <table class="table">
                     <thead>
                         <tr>
-                            <th scope="col" class="table-id">ID</th>
-                            <th scope="col" class="table-nome">Nome - Produto</th>
+                            <th scope="col" class="table-id">ID da Compra - ID do Usuário</th>
+                            <th scope="col" class="table-nome">Produto - Categoria - ID</th>
                             <th scope="col" class="table-date">Data de criação</th>
                             <th scope="col" class="table-preco">Preço (R$)</th>
                             <th scope="col" class="table-edit">Validar</th>
@@ -89,7 +89,7 @@ require_once "listar_requisicoes.php";
                     <tbody>
                         <tr>
                             <?php   while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
-                            <td class="table-id"><?php echo($list_1['id']);?></td>
+                            <td class="table-id"><?php echo($list_1['id']); echo($list_1['iduser']); ?></td>
                             <td class="table-nome"><?php echo ''.$list_1['nomeprod'].' - '.$list_1['catg'].' - '.$list_1['nomeuser'];?></td>
                             <td class="table-date"><?php echo($list_1['dadd']);?></td>
                             <td class="table-preco"><?php echo($list_1['preco']);?></td>

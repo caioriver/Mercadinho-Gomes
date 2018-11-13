@@ -8,6 +8,7 @@ $cx = db_connect();
 $_checkbox = $_GET['box'];
 var_dump($_GET['box']);
 foreach($_checkbox as $_valor){
+
 $query1 = 'DELETE FROM requisicoes WHERE id = ' .$_valor.';';
 $insert1 = $cx->prepare($query1);
 $insert1->execute();
