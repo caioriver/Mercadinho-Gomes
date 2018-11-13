@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
 .col
 {
     margin-left: 29vh;
@@ -5,47 +10,52 @@
 
 .plus-card-img 
 {
- width: 12vh;
- align-content: center;
- align-self: center;
- margin: 0vh -20vh 0vh 2vh;
+    /* width: 12vh; */
+    align-content: center;
+    align-self: center;
 }
-
 
 .border-lowblue 
 {
-    top: 0vh;
     background-color: #D6D6D6;
     border: 1.2vh solid #0971B2;
-    border-radius: 1.4vh;
-    width: 30vh;
-    height: 38vh;
+    border-radius: 10px;
+    width: 25vh;
+    /* height: 38vh; */
 }
 
 .card-foot
 { 
     border: none;
-    background-color: #D6D6D6;
-    padding-top: 5vh;
+    padding-top: 3vh;
     color: #0971B2;
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 3vh;
+    font-size: 1.4rem;
 }
 
-.title 
-{
-top: 4vh;
+.imagens{
+    padding: 3vh;
 }
 
-#cards
+/* #cards
 {
-padding-top: 14vh;
-}
+    padding-top: 14vh;
+} */
 
-#cards
-{
-padding-top: 14vh;
+@media (max-height: 494px){
+    .card-foot
+    { 
+        border: none;
+        padding-top: 0vh;
+        color: #0971B2;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        line-height: normal;
+        font-size: 0rem;
+    }
+
 }
