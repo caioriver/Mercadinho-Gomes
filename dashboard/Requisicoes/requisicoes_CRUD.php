@@ -7,7 +7,7 @@ require_once "listar_requisicoes.php";
 
 <html>
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
-<link rel="stylesheet" type="text/css" href="../CSS/principal.css">
+<link rel="stylesheet" type="text/css" href="../CSS/requisicoes_CRUD.css">
 
 <body>
     <!-- NAVBAR -->
@@ -112,9 +112,9 @@ require_once "listar_requisicoes.php";
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col" class="table-id">ID da Compra -<br> ID do Usuário</th>
-                                <th scope="col" class="table-nome">Produto - Categoria - Usuário</th>
-                                <th scope="col" class="table-date">Data de criação</th>
+                                <th scope="col" class="table-id">ID da Compra</th>
+                                <th scope="col" class="table-nome">Produto - Usuário</th>
+                                <th scope="col" class="table-date">Data de Pedido</th>
                                 <th scope="col" class="table-preco">Preço (R$)</th>
                                 <th scope="col" class="table-edit">Validar</th>
                             </tr>
