@@ -38,7 +38,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="QuemSomos.php">Quem Somos</a>
-                            <div class="pg-atual animated fadeIn"></div>
+                            <div class="pg-atual animated fadeIn slow"></div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="produtos.php">Produtos</a>
@@ -91,7 +91,7 @@
                 <div class="col-lg-4">
                     <img src="icones/logo-vertical.png" class="imagem mt-5">
                 </div>
-                <div class="col-lg-8 col-md-12 animated fadeInUp">
+                <div class="col-lg-8 col-md-12 animated fadeInUp slow">
                     <h2 class="titulo mt-5 mb-3">Quem Somos?</h2>
                     <p class="texto">O Mercado Gomes é um estabelecimento presente na vida dos nossos fregueses por mais de 8 anos, fornecendo produtos de qualidade e preços atraentes a altura de que os clientes merecem. Com localidade no Caminho das Arvores, em Salvador, e posteriormente uma filial em Itapuã, é mostrado diariamente como o Mercado Gomes opera de forma eficiente e eficaz para que as pessoas tenham o melhor consumo e atendimento que o estabelecimento pode oferecer com entregas delivery nos finais de semana. Sempre mostrando-se presente na vida dos moradores dos bairros que a loja reside.
                     </p>
