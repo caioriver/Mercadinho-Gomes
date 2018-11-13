@@ -110,27 +110,15 @@
             <div class="slider">
                 <div class="slide">
                     <div class="media">
-                    <img class="align-self-start mr-2" src="icones/aspas-abre.png" width="25" alt="Abre aspas">
+                        <img class="align-self-start mr-2" src="icones/aspas-abre.png" width="25" alt="Abre aspas">
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
-                                <p>é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+                                <p>
+                                    É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito.
+                                </p>
                             </div>                            
                         </div>
-                        <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
-                    </div>
-                    <div class="sbt-meta">
-                        <p class="sbt-title">- Caio Rios</p>
-                    </div>
-                </div>
-                <div class="slide">
-                    <div class="media">
-                    <img class="align-self-start mr-3" src="icones/aspas-abre.png" width="25" alt="Abre aspas">
-                        <div class="media-body">
-                            <div class="sbt-text mt-0 mb-1">
-                                <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito.</p>
-                            </div>                            
-                        </div>
-                        <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
+                            <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
                     </div>
                     <div class="sbt-meta">
                         <p class="sbt-title">- Paulo R. de Macedo</p>
@@ -138,10 +126,12 @@
                 </div>
                 <div class="slide">
                     <div class="media">
-                    <img class="align-self-start mr-3" src="icones/aspas-abre.png" width="25" alt="Abre aspas">
+                        <img class="align-self-start mr-3" src="icones/aspas-abre.png" width="25" alt="Abre aspas">
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
-                                <p>Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet.</p>
+                                <p>
+                                    Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet.
+                                </p>
                             </div>                            
                         </div>
                         <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
