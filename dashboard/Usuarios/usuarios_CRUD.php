@@ -150,6 +150,7 @@
                                 <input type="checkbox" value ="<?php echo($list_1['id']);?>" name='box[]'>
                             </td>
                         </tr>
+                    </tbody>
                 <?php endwhile; ?>
                     </form>
                 </div>
