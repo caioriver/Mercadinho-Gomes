@@ -107,7 +107,7 @@ require_once "../Constructs/header.php";
                         
                         
                         <label class="label-file ml-3 mt-4">Selecionar Imagem</label>
-                        <input type="file" name="file-img" class=" form-control form-img">
+                        <input required type="file" name="file-img" class=" form-control form-img">
                         <label class="label-preco ml-3 mt-4">Preço</label>
                         <?php if (!(empty($_SESSION['preco-e']))) {
                             echo '<a>'.$_SESSION['preco-e'].'</a>';

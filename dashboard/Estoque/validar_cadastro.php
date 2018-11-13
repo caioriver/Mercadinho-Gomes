@@ -3,11 +3,9 @@ session_start();
 require_once "../../fun/_fixed.php";
 $conect = db_connect();
 
-if (empty($_POST)) {
-    $_SESSION['debug'] = "Não foi possivel postar";
-} else {
-
-    
+// if (empty($_POST)) {
+//     $_SESSION['debug'] = "Não foi possivel postar";
+// } else {    
     
     $val = new validacao;
         $_SESSION['nome-e'] = $val->validarNome($_POST['nome']);
@@ -23,7 +21,7 @@ if (empty($_POST)) {
         move_uploaded_file($_FILES['file-img']['tmp_name'], $dir.$fileNome);        
         // echo $_SESSION['file-img-e'];
         // var_dump([$_SESSION['nome-e']]);
-}
+
         $query_1 = 'SELECT pass,mail FROM superadmin WHERE mail = :mail;';
         $stmt_1 = $conect->prepare($query_1);
         $stmt_1->bindValue(':mail',$_POST['adm-mail']);
@@ -36,10 +34,10 @@ if (empty($_POST)) {
         $stmt_1 = $conect->prepare($query_1);
         $stmt_1->bindValue(':mail',$_POST['adm-mail']);
         $stmt_1->execute();
-        $superadm = $stmt_1->fetch(PDO::FETCH_ASSOC);
+        $adm = $stmt_1->fetch(PDO::FETCH_ASSOC);
 
-        if (empty($superadm)) {
-        } else if (sha1($_POST['adm-pass']) == $superadm['pass']) {
+        if (!(empty($adm))) {
+        if (sha1($_POST['adm-pass']) == $superadm['pass']) {
             if  ($_SESSION['preco-e'] == NULL && $_SESSION['nome-e'] == NULL 
             && $_SESSION['adm-mail-e'] == NULL && $_SESSION['adm-pass-e'] == NULL)
                 {        
@@ -70,4 +68,7 @@ if (empty($_POST)) {
                 header ("Location: estoque_criar.php");  
                 
         }
-    }
+    } else $_SESSION['dbug'] = "Dados inválidos - Usuário não existente";
+    header ("Location: estoque_criar.php");
+}
+// }
