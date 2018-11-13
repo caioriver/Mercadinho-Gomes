@@ -142,3 +142,7 @@ body{
     overflow: hidden;
 }
 /* Fim do Footer */
+
+a, a:hover{
+    color: #fff;
+}
