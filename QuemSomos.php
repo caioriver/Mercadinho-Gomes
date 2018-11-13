@@ -38,7 +38,7 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="QuemSomos.php">Quem Somos</a>
-                            <div class="pg-atual"></div>
+                            <div class="pg-atual animated fadeIn"></div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="produtos.php">Produtos</a>
@@ -91,7 +91,7 @@
                 <div class="col-lg-4">
                     <img src="icones/logo-vertical.png" class="imagem mt-5">
                 </div>
-                <div class="col-lg-8 col-md-12">
+                <div class="col-lg-8 col-md-12 animated fadeInUp">
                     <h2 class="titulo mt-5 mb-3">Quem Somos?</h2>
                     <p class="texto">O Mercado Gomes é um estabelecimento presente na vida dos nossos fregueses por mais de 8 anos, fornecendo produtos de qualidade e preços atraentes a altura de que os clientes merecem. Com localidade no Caminho das Arvores, em Salvador, e posteriormente uma filial em Itapuã, é mostrado diariamente como o Mercado Gomes opera de forma eficiente e eficaz para que as pessoas tenham o melhor consumo e atendimento que o estabelecimento pode oferecer com entregas delivery nos finais de semana. Sempre mostrando-se presente na vida dos moradores dos bairros que a loja reside.
                     </p>
@@ -111,14 +111,14 @@
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
                                 <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito.
+                                    &nbsp;&nbsp;&nbsp;&nbsp;COMENTÁRIO DO CLIENTE
                                 </p>
                             </div>                            
                         </div>
                             <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
                     </div>
                     <div class="sbt-meta">
-                        <p class="sbt-title">- Caio Rios</p>
+                        <p class="sbt-title">- Cliente 1</p>
                     </div>
                 </div>
                 <div class="slide">
@@ -127,14 +127,14 @@
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
                                 <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de "Conteúdo aqui, conteúdo aqui", fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e editores de páginas na internet agora usam Lorem Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito.
+                                    &nbsp;&nbsp;&nbsp;&nbsp;COMENTÁRIO DO CLIENTE
                                 </p>
                             </div>                            
                         </div>
                             <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
                     </div>
                     <div class="sbt-meta">
-                        <p class="sbt-title">- Paulo R. de Macêdo</p>
+                        <p class="sbt-title">- Cliente 2</p>
                     </div>
                 </div>
                 <div class="slide">
@@ -143,14 +143,14 @@
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
                                 <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto. Todos os geradores de Lorem Ipsum na internet tendem a repetir pedaços predefinidos conforme necessário, fazendo deste o primeiro gerador de Lorem Ipsum autêntico da internet.
+                                    &nbsp;&nbsp;&nbsp;&nbsp;COMENTÁRIO DO CLIENTE
                                 </p>
                             </div>                            
                         </div>
                         <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
                     </div>
                     <div class="sbt-meta">
-                        <p class="sbt-title">- Victor Fernandes</p>
+                        <p class="sbt-title">- Cliente 3</p>
                     </div>
                 </div>
             </div>
