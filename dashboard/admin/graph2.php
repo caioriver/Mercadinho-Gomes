@@ -1,8 +1,8 @@
 <?php
 require_once "../Constructs/header.php";
-if ($_SESSION['type-user'] != 'super') {
-     header("Location: ../Principal/principal.php");
-}
+// if ($_SESSION['type-user'] != 'super') {
+//      header("Location: ../Principal/principal.php");
+// }
 require_once "../../fun/_fixed.php";
 $conect = db_connect();
 $query_1 = "SELECT nome,debit FROM usuarios ORDER BY debit ASC LIMIT 5;";

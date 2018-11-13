@@ -7,7 +7,6 @@ $val = new validacao;
     $_SESSION['e-log-mail'] = $val->validarEmail($_POST['log-mail']);
     $_SESSION['e-log-pass'] = $val->validarSenha($_POST['log-pass']);
     // echo($_SESSION['e-log-mal']);
-    
 
     if ($_SESSION['e-log-mail'] == NULL && $_SESSION['e-log-mail'] == NULL) {
         
