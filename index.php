@@ -67,12 +67,16 @@
                 <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></div>
                 <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="1"></div>
                 <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="2"></div>
+                <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="3"></div>
+                <div class="mx-2 indicador" data-target="#carouselExampleIndicators" data-slide-to="4"></div>
             </ol>
             
             <div class="carousel-inner" role="listbox">
                 <div class="carousel-item active" id="slide01"></div>
                 <div class="carousel-item" id="slide02"></div>
                 <div class="carousel-item" id="slide03"></div>
+                <div class="carousel-item" id="slide04"></div>
+                <div class="carousel-item" id="slide05"></div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                 <img src="icones/left-arrow.png" alt="">

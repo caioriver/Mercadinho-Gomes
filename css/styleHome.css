@@ -13,13 +13,19 @@
         border: 1px solid black;
     }
     #slide01{
-        background-image: url(../img/slide02.jpg);
+        background-image: url(../img/slide01.jpeg);
     }
     #slide02{
-        background-image: url(../img/1438112765_Hortifruti_Uruguai.jpg);
+        background-image: url(../img/slide02.jpeg);
     }
     #slide03{
-        background-image: url(../img/dsc08165_min_aeba-5378683.jpg);
+        background-image: url(../img/slide03.jpeg);
+    }
+    #slide04{
+        background-image: url(../img/slide04.jpeg);
+    }
+    #slide05{
+        background-image: url(../img/slide05.jpeg);
     }
 
     .carousel-item {

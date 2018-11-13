@@ -1,18 +1,14 @@
-.form-icon
-{
-    height: 4vh;
-}
 label 
 {
-    margin-top: 1vh;
+    /* margin-top: 1vh; */
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 15px;
+    font-size: 1rem;
     width: 100%;
     color: #000000;
-    
+
 }
 
 button 
@@ -22,7 +18,7 @@ padding: 0;
 table 
 {
     text-align: center;
-    font-size: 3vh;
+    font-size: 1.3rem;
 }
 th
 {
@@ -36,19 +32,19 @@ td
     border: solid 0.2vh;
     background-color: #ffffff;
 }
-
+/* 
 .form-group 
 {
     margin: 15vh 0 0 40vh;
 
-}
+} */
 
 .table-control 
 {
-    
     border-radius: 4vh;
     width: auto;
-    margin: 5vh 10vw 0 40vh; 
+    margin-top: 5vh;
+    width: 100% 
 }
 
 .table-id 
@@ -90,7 +86,7 @@ td
 .form-control 
 {
     border-radius: 4vh;
-    font-size: 3vh;
+    font-size: 1.5rem;
     margin-top: 1vh;
 }
 .imput-select 
@@ -108,44 +104,38 @@ td
     width: 20vw;
 }
 
-.btn 
+.botao 
 {
     border-radius: 6vh;
-    font-size: 4vh;
+    font-size: 1rem;
     height: 6vh;
     background-color: #0971B2;
     padding: 0vh 1vw;
     margin: 4vh 0vh 0 0;
+    width: 60%;
 }
 
 @media(max-width: 768px){
-    .btn{
-        font-size: 15px;
+    .botao{
         padding: 0;
         width: 100%;
     }
-    .form-group 
+    /* .form-group 
     {
         margin: 20vh 3vw 0 10vw;
-    }
-        .table-control 
+    } */
+        /* .table-control 
     {
         width: 80vw;
         margin: 5vh 10vw 0 10vw; 
-    }
-    .title{
-        padding-left: 0; 
-        margin-left: 25%;
-        transform: rotateX(-50%);
-        text-align: center;
-        font-size: 18px;
-    }
+    } */
+
 }
 @media(max-width: 576px){
-    .form-group 
+    /* .form-group 
     {
         margin: 20vh 3vw 0 10vw;
-    }
+    } */
     .container{
         padding: 0;
         margin: 0;
