@@ -8,8 +8,10 @@
         <!-- Bootstrap local css comun-->
         <link rel="stylesheet" href="../../css/bootstrap.css">
         <link rel="stylesheet" href="../CSS/all.css">
+        <link rel="icon" href="../../icones/online-shopping.ico">
 
     </head>
 <?php
 session_start();
 ?>
+</html>
