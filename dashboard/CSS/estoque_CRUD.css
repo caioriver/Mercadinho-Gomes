@@ -18,7 +18,7 @@ padding: 0;
 table 
 {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 th
 {
@@ -86,7 +86,7 @@ td
 .form-control 
 {
     border-radius: 4vh;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-top: 1vh;
 }
 .imput-select 
@@ -112,7 +112,6 @@ td
     background-color: #0971B2;
     padding: 0vh 1vw;
     margin: 4vh 0vh 0 0;
-    width: 60%;
 }
 
 @media(max-width: 768px){
