@@ -28,7 +28,7 @@ unset($_SESSION['user-edit']);
                         </li>
                         <li>
                             <a href="../Usuarios/usuarios.php">
-                                Usuarios
+                                Usuários
                             </a>
                         </li>
                         <li>
@@ -65,7 +65,7 @@ unset($_SESSION['user-edit']);
                         </button>
                     
                         <div class="title justify-content-center text-center">
-                            <h1>Principal</h1>
+                            <h1>Administradores</h1>
                         </div>
 
                     </div>

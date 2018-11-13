@@ -25,14 +25,14 @@ if ($_SESSION['type-user'] != "super") {
                 </div>            
                 <ul class="list-unstyled components menuu">
                     <div class="cordefundo">
-                        <li>
+                        <li class="active">
                             <a href="../Principal/principal.php">
                                 Principal
                             </a>
                         </li>
-                        <li class="active">
+                        <li>
                             <a href="../Usuarios/usuarios.php">
-                                Usuarios
+                                Usuários
                             </a>
                         </li>
                         <li>

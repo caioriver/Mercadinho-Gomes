@@ -40,7 +40,7 @@ $_SESSION['id-up'] = $id;
                     </li>
                     <li>
                         <a href="../Usuarios/usuarios.php">
-                            Usuarios
+                            Usuários
                         </a>
                     </li>
                     <li>
@@ -77,7 +77,7 @@ $_SESSION['id-up'] = $id;
                     </button>
                 
                     <div class="title justify-content-center text-center">
-                        <h1>Principal</h1>
+                        <h1>Editar Adiministrador</h1>
                         <?php 
                             if (!(empty($_SESSION['dbug']))) {
                                 echo '<h3>'.$_SESSION['dbug'].'</h3>';
