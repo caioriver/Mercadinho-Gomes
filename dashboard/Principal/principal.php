@@ -46,7 +46,7 @@ require_once "../Constructs/header.php";
         <div class="row justify-content-md-center">
         
         <div class="col col-lg-2">
-            <a href="../Usuarios/usuarios_criar.php"><div class=" card text-center border-lowblue mb-3" style="max-width: 20rem;">
+            <a href="../admin/graph.php"><div class=" card text-center border-lowblue mb-3" style="max-width: 20rem;">
                 <div class="card-body text-success">
                     <div class="mt-5 col-12 col-md-4">
                         <img class="d-flex justify-content-center card-img-top plus-card-img" src="../Images/debitos.png" alt="Card image cap">  
