@@ -8,7 +8,7 @@ $conect = db_connect();
         $tipo = " ";
         $texto = " ";
         $order= " ";
-        $query_1 = "SELECT id,idprod,nomeuser,catg,nomeprod,dadd FROM requisicoes ORDER BY id ASC;";
+        $query_1 = "SELECT id,idprod,nomeuser,catg,nomeprod,dadd,preco FROM requisicoes ORDER BY id ASC;";
         $stmt_1 = $conect->prepare($query_1);
         $stmt_1->execute();
 
@@ -46,7 +46,7 @@ if (empty($_POST['order'])) {
     }
 }
 if (empty($_POST['busca'])) {
-    $query_1 = 'SELECT id,idprod,nomeuser,catg,nomeprod,dadd FROM requisicoes '.$order.';';
+    $query_1 = 'SELECT id,idprod,nomeuser,catg,nomeprod,dadd,preco FROM requisicoes '.$order.';';
     $stmt_1 = $conect->prepare($query_1);
     $stmt_1->execute();
 } else {
@@ -54,8 +54,7 @@ switch ($tipo) {
     
     case '1':
         $texto = '"%'.$_POST['busca'].'%"'; 
-        $query_1 = 'SELECT nomeuser,catg,nomeprod,id,idprod,dadd FROM requisicoes WHERE catg LIKE '.$texto.' '.$order.';';
-        
+        $query_1 = 'SELECT nomeuser,catg,nomeprod,id,idprod,dadd,preco FROM requisicoes WHERE catg LIKE '.$texto.' '.$order.';';
         $stmt_1 = $conect->prepare($query_1);
         // $stmt_1->bindValue('text',$texto);
         $stmt_1->execute();
@@ -64,7 +63,7 @@ switch ($tipo) {
     case '2':
 
             $texto = '"%'.$_POST['busca'].'%"'; 
-            $query_1 = 'SELECT nomeuser,catg,nomeprod,id,idprod,dadd FROM requisicoes WHERE nome     LIKE '.$texto.' '.$order.';';
+            $query_1 = 'SELECT nomeuser,catg,nomeprod,id,idprod,dadd,preco FROM requisicoes WHERE nome     LIKE '.$texto.' '.$order.';';
             $stmt_1 = $conect->prepare($query_1);
             $stmt_1->execute();
     
@@ -74,7 +73,7 @@ switch ($tipo) {
     case '3':
             
             $texto = '"%'.$_POST['busca'].'%"'; 
-            $query_1 = 'SELECT nomeuser,catg,nomeprod,id,idprod,dadd FROM requisicoes WHERE id LIKE '.$texto.' '.$order.';';
+            $query_1 = 'SELECT nomeuser,catg,nomeprod,id,idprod,dadd,preco FROM requisicoes WHERE id LIKE '.$texto.' '.$order.';';
             $stmt_1 = $conect->prepare($query_1);
             $stmt_1->execute();
     break;

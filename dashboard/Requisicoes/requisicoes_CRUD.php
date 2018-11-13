@@ -90,12 +90,12 @@ require_once "listar_requisicoes.php";
                         <tr>
                             <?php   while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
                             <td class="table-id"><?php echo($list_1['id']);?></td>
-                            <td class="table-nome"><?php echo ''.$list_1['nome'].' - '.$list_1['catg'];?></td>
+                            <td class="table-nome"><?php echo ''.$list_1['nomeprod'].' - '.$list_1['catg'].' - '.$list_1['nomeuser'];?></td>
                             <td class="table-date"><?php echo($list_1['dadd']);?></td>
-                            <td class="table-preco">000.000</td>
+                            <td class="table-preco"><?php echo($list_1['preco']);?></td>
                             <td>
-                                <a class="table-edit-icon" href="estoque_editar.php">
-                                <input type="checkbox" value ="<?php echo($list_1['id']); ?>" name='box[]'>
+                                <a class="table-edit-icon" href="requisicoes_validar.php">
+                                <input type="checkbox" value ="<?php echo($list_1['id']);?>" name='box[]'>
                             </td>
                         </tr>
                             <?php endwhile; ?>

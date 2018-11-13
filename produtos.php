@@ -1,4 +1,5 @@
     <?php
+    session_start();
 require_once "./fun/listar_produtos.php";
 ?>
 <!DOCTYPE html>
@@ -86,14 +87,14 @@ require_once "./fun/listar_produtos.php";
                         </div>
                     </div>
                     <div class="container">
-                        <form action="" method="GET">
+                        <form action="comprar.php" method="GET">
                         <div class="row mb-4">
                             <?php while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
                                 <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
                                     <label for="" class="image-checkbox" >
                                         <img class="img-fluid img-produtos" src="dashboard/Estoque/images/<?php $a = 1; $a = $a+1; echo($list_1['img']);?>"
                                             alt="" width="300">
-                                        <input type="checkbox" name="produto[]" id="nomedoproduto">
+                                        <input value="<?php echo($list_1['id']);?>" type="checkbox" name="produto[]" id="nomedoproduto">
                                         <i><img class="imagem" src="icones/checked.png" alt=""></i>
                                     </label>
                                     <p>Quantidade:</p>

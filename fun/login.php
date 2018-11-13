@@ -45,7 +45,7 @@ $val = new validacao;
                 header("Location: ../usuarios.php");
             }
         } else {
-            $query_1 = 'SELECT mail,pass FROM usuarios WHERE mail = :mail';
+            $query_1 = 'SELECT id,mail,pass FROM usuarios WHERE mail = :mail';
             $stmt_1 = $connect->prepare($query_1);
             $stmt_1->bindValue(':mail',$_POST['log-mail']);
             $stmt_1->execute();
@@ -54,10 +54,10 @@ $val = new validacao;
             if (!(empty($user_1))) {
                 
                 if ($user_1['pass'] == sha1($_POST['log-pass'])) {
-                    header("Location: ../");
                     $_SESSION['id'] = $user_1['id'];
                     $_SESSION['mail'] = $user_1['mail'];
-            
+                    header("Location: ../produtos.php");
+                    
                 } else{
                     $_SESSION['e-log-pass'] = "Senha inválida";
                     header("Location: ../usuarios.php");

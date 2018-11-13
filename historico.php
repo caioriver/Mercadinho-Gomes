@@ -1,3 +1,7 @@
+<?php 
+session_start();
+require_once "./fun/_fixed.php";
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -115,7 +119,7 @@
                             <a href="alterarInfo.php">Alterar Cadastro</a>
                         </div>
                         <div class="op-info col-sm-6 text-center col-6 col-md-6">
-                            <a href="">Sair</a>
+                            <a href="./fun/logoff.php">Sair</a>
                         </div>
                     </div>
                 </div>

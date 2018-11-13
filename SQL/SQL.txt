@@ -15,6 +15,7 @@ CREATE TABLE requisicoes
 (
     id int (10) NOT NULL AUTO_INCREMENT,
     idprod int (10) NOT NULL,
+    iduser int (10) NOT NULL,
     nomeuser varchar (256) NOT NULL,
     nomeprod varchar (256) NOT NULL,
     catg varchar (256) NOT NULL,
