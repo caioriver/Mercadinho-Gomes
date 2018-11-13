@@ -120,8 +120,8 @@ require_once "listar_requisicoes.php";
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <?php   while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
+                            <?php   while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
+                                <tr> 
                                     <td class="table-id"><?php echo($list_1['id']); echo'<br>'.$list_1['idprod'];?></td>
                                     <td class="table-nome"><?php echo ''.$list_1['nomeprod'].' - '.$list_1['catg'].' - '.$list_1['nomeuser'];?></td>
                                     <td class="table-date"><?php echo($list_1['dadd']);?></td>
@@ -129,8 +129,8 @@ require_once "listar_requisicoes.php";
                                     <td>
                                         <input type="checkbox" value ="<?php echo($list_1['iduser']);?>" name='box[]'>
                                     </td>
+                                </tr>
                                 <?php endwhile; ?>
-                            </tr>
                         </tbody>    
                     </table>
                 </div>
