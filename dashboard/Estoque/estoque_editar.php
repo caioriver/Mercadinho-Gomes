@@ -97,15 +97,15 @@ $_SESSION['id-up'] = $id;
                         unset($_SESSION['preco-e']);
                     }?>
                     <input type="text" name="preco" class="form-control imput-debit" placeholder="Ex 00,00 (R$)">
-                    <div class="row container">
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 mb-4">
+                    <div class="row">
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-4">
                             <button type="submit" class="btn btn-primary bt-valid">Validar</button>
                         </div>
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 mb-4">
-                            <input type="button" value="Sair" class="btn btn-primary" onclick="window.location.href='estoque_CRUD.php'" >
-                        </div>
-                        <div class="col-4 col-sm-4 col-md-4 col-lg-4 mb-4">                        
+                        <div class="col-6 col-sm-4 col-md-4 col-lg-4">                        
                             <button type="reset" class="btn btn-primary bt-valid">Limpar</button>
+                        </div>
+                        <div class="col-12 col-sm-4 col-md-4 col-lg-4">
+                            <input type="button" value="Sair" class="btn btn-primary mb-4" onclick="window.location.href='estoque_CRUD.php'" >
                         </div>
                     </div>
                 </form>

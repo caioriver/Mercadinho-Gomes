@@ -24,7 +24,7 @@ padding: 0;
 {
     height: 100%;
     border-radius: 4vh;
-    width: 60vw;
+    width: 91%;
     font-size: 3vh;
     margin-top: 1vh;
 }
@@ -38,7 +38,7 @@ padding: 0;
     background-color: #0971B2;
     padding: 0vh 3vw;
     margin: 3vh 0 0 0;
-    width: 15vw;
+    width: 100%;
 }
 
 .btn:hover{
@@ -66,14 +66,14 @@ input[type='file']{
 
 .label-file{
       margin: 2.5vh 0 0 0;
-  }
+}
 
 
 @media(max-width: 768px){
     .btn{
         font-size: 15px;
         padding: 0;
-        width: 15vw;
+        width: 100%;
     }
 }
 @media(max-width: 576px){

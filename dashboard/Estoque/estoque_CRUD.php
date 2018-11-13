@@ -36,8 +36,8 @@ unset($_SESSION['user-edit']);
     </div>
 
     <body>
-        <div id="title" class="title">
-            <h1>Lista de Estoque</h1>
+        <div id="title" class="title row">
+            <h1 class="justify-content-center col-12">Lista de Estoque</h1>
         </div> <!--fim title-->
         <section>
             <div class="form-group">
@@ -74,10 +74,20 @@ unset($_SESSION['user-edit']);
                 <!--Fim da linha-->
 
                 <form method= "GET" action = "delete_multi.php">  
-                    <button type="submit" class="btn btn-primary ">Buscar</button>
-                    <input type=submit  class="btn btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
-                    <button type="submit" class="btn btn-primary">Exportar</button>
-                    <input type="button" value="Adicionar" class="btn btn-primary" onclick="window.location.href='estoque_criar.php'" >
+                    <div class="row">
+                        <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">                        
+                            <button type="submit" class="btn btn-primary ">Buscar</button>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-3">
+                            <input type=submit  class="btn btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
+                        </div>
+                        <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">
+                            <button type="submit" class="btn btn-primary">Exportar</button>
+                        </div>
+                        <div class="col-6 col-sm-3 col-md-3 col-lg-3">                        
+                            <input type="button" value="Adicionar" class="btn btn-primary" onclick="window.location.href='estoque_criar.php'" >
+                        </div>
+                    </div>
                 </form>
             </div>
         </section>

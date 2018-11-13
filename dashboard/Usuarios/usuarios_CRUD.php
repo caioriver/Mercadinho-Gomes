@@ -36,27 +36,27 @@ require_once "listar_usuarios.php";
 <link rel="stylesheet" type="text/css" href="../CSS/usuarios_CRUD.css">
 <body>
 
-<div id="title" class="title">
-<h1>Usuários</h1>
+<div id="title" class="title row">
+<h1 class="justify-content-center col-12">Usuários</h1>
 </div> <!--fim title-->
 <section>
     <div class="form-group">
 <form action= "<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
 <div class="row">
-        <div class="col-3">
-            <label class="label-select">Buscar por</label>
+        <div class="mt-3 col-4 col-sm-4 col-md-4 col-lg-4"> 
+            <label class="ml-3 label-select">Categoria:</label>
                 <select name = "type" class="form-control imput-select">
                     <option value = "nome">Nome</option>
                     <option value = "id">ID</option>
                     <option>Congelados</option>
                 </select>
         </div>
-        <div class="col-3">
-            <label class="label-serach">Buscar por:</label>
+        <div class="mt-3 col-4 col-sm-4 col-md-4 col-lg-4"> 
+            <label class="ml-3 label-serach">Buscar por:</label>
                 <input name="busca" type="text" class="form-control imput-serach" placeholder="Nome do item">
         </div>
-        <div class="col-3">
-            <label class="label-order">Ordenar por</label>
+        <div class="mt-3 col-4 col-sm-4 col-md-4 col-lg-4"> 
+            <label class="ml-3 label-order">Ordenar por</label>
                 <select name="order" class="form-control imput-order">
                     <option value= "1">Mais antigos</option>
                     <option value = "2">Mais novos</option>
@@ -68,11 +68,20 @@ require_once "listar_usuarios.php";
         </div>
         </div> <!--Fim da linha-->
         <form method= "GET" action = "delete_multi.php">  
-    <button type="submit" class="btn btn-primary ">Buscar</button>
-    <input type=submit  class="btn btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
-    <button type="submit" class="btn btn-primary">Exportar</button>
-    <input type="button" value="Adicionar" class="btn btn-primary" onclick="window.location.href='usuarios_criar.php'" >
-
+        <div class="row">
+            <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">                        
+                <button type="submit" class="btn btn-primary ">Buscar</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">                        
+                <input type=submit  class="btn btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
+            </div>
+            <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">                        
+                <button type="submit" class="btn btn-primary">Exportar</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">                        
+                <input type="button" value="Adicionar" class="btn btn-primary" onclick="window.location.href='usuarios_criar.php'" >
+            </div>
+        </div>
             </div>
         </div>
         </div>
