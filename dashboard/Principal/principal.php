@@ -60,7 +60,7 @@ require_once "../Constructs/header.php";
         <div> <!--fim coluna-->
 
         <div class="col col-lg-2">
-            <a ><div class=" card text-center border-lowblue " style="max-width: 20rem;">
+            <a href = "../admin/graph2.php  "><div class=" card text-center border-lowblue " style="max-width: 20rem;">
                 <div class="card-body">
                     <div class="mt-5 col-12 col-md-4">
                         <img class="d-flex justify-content-center card-img-top plus-card-img" src="../Images/graph.png" alt="Card image cap">  
