@@ -10,8 +10,6 @@ $stmt_1 = $conect->prepare($query_1);
 $stmt_1->execute();
 ?>
 
-
-
 <html>
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
 

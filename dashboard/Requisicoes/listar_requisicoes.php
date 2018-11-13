@@ -46,7 +46,7 @@ if (empty($_POST['order'])) {
     }
 }
 if (empty($_POST['busca'])) {
-    $query_1 = 'SELECT id,idprod,nomeuser,catg,nomeprod,dadd,preco FROM requisicoes '.$order.';';
+    $query_1 = 'SELECT id,iduser,idprod,nomeuser,catg,nomeprod,dadd,preco FROM requisicoes '.$order.';';
     $stmt_1 = $conect->prepare($query_1);
     $stmt_1->execute();
 } else {

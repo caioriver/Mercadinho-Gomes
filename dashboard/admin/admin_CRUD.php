@@ -67,8 +67,8 @@ unset($_SESSION['user-edit']);
         
         </div>
         </div> <!--Fim da linha-->
-        </form>
-        <form method= "GET" action = "delete_multi.php">
+    </form>
+    <form method= "GET" action = "delete_multi.php">
     <button type="submit" class="btn btn-primary ">Buscar</button>
     <input type=submit  class="btn btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
     <button type="submit" class="btn btn-primary">Exportar</button>
