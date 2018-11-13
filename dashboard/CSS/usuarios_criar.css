@@ -37,11 +37,11 @@ td
     background-color: #ffffff;
 }
 
-.form-group 
+/* .form-group 
 {
     margin: 15vh 5vw 0 20vw;
 
-}
+} */
 
 .table-control 
 {
@@ -108,10 +108,10 @@ td
     width: 20vw;
 }
 
-.btn 
+.botao 
 {
     border-radius: 6vh;
-    font-size: 4vh;
+    font-size: 1.8rem;
     height: 6vh;
     background-color: #0971B2;
     padding: 0vh 1vw;
@@ -120,16 +120,16 @@ td
 }
 
 @media(max-width: 768px){
-    .btn{
+    .botao{
         font-size: 15px;
         padding: 0;
         width: 100%;
     }
-    .form-group 
+    /* .form-group 
     {
         margin: 20vh 3vw 0 10vw;
-    }
-        .table-control 
+    } */
+    .table-control 
     {
         width: 80vw;
         margin: 5vh 10vw 0 10vw; 
@@ -143,10 +143,10 @@ td
     }
 }
 @media(max-width: 576px){
-    .form-group 
+    /* .form-group 
     {
         margin: 20vh 3vw 0 10vw;
-    }
+    } */
     .container{
         padding: 0;
         margin: 0;
