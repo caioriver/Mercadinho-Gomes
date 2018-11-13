@@ -115,4 +115,3 @@ unset($_SESSION['user-edit']);
 
 </form>
 </section>
-<?php
