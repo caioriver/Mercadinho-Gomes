@@ -143,9 +143,9 @@ require_once "../Constructs/header.php";
                 
                 
             
-            <?php
-                require_once "../Constructs/footer.php"
-            ?>
+    <?php
+        require_once "../Constructs/footer.php"
+    ?>
             
 </body>
 </html>
