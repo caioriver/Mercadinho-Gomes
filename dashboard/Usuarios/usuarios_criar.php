@@ -89,7 +89,7 @@ require_once "../Constructs/header.php";
                         ?>
                         <input type="text" name="nome" class="form-control" name="nome" placeholder="Nome completo">        
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-mail">E-mail</label>                        
                                 <?php if (!(empty($_SESSION['mail-e']))) {
                                     echo '<a>'.$_SESSION['mail-e'].'</a>';
@@ -97,7 +97,7 @@ require_once "../Constructs/header.php";
                                 }?>                            
                                 <input type="email" name="mail" class="form-control imput-email" placeholder="E-mail">
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-cpf">CPF</label>
                                 <?php if (!(empty($_SESSION['cpf-e']))) {
                                     echo '<br><a>'.$_SESSION['cpf-e'].'</a>';
@@ -107,7 +107,7 @@ require_once "../Constructs/header.php";
                             </div>
                         </div> <!--fim linha duas colunas-->
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-confirm-mail">Confirmar E-mail</label>
                                 <?php if (!(empty($_SESSION['c-mail-e']))) {
                                     echo '<a>'.$_SESSION['c-mail-e'].'</a>';
@@ -115,7 +115,7 @@ require_once "../Constructs/header.php";
                                 }?>
                                 <input type="email" name="c-mail" class="form-control imput-email" placeholder="Confirmar E-mail">
                             </div>        
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-tel">Telefone</label>
                                 <?php if (!(empty($_SESSION['tel-e']))) {
                                     echo '<a>'.$_SESSION['tel-e'].'</a>';
@@ -133,7 +133,7 @@ require_once "../Constructs/header.php";
                         <input type="text" name="end" class="form-control" placeholder="Endereço">
                         
                         <div class="row">
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-senha">Senha</label>
                                 <?php if (!(empty($_SESSION['pass-e']))) {
                                     echo '<a>'.$_SESSION['pass-e'].'</a>';
@@ -141,7 +141,7 @@ require_once "../Constructs/header.php";
                                 }?>  
                                 <input type="password" name="pass" class="form-control imput-senha" placeholder="Senha">
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-confirm-senha">Confirmar senha</label>
                                 <?php if (!(empty($_SESSION['c-pass-e']))) {
                                     echo '<a>'.$_SESSION['c-pass-e'].'</a>';
