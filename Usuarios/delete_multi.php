@@ -3,6 +3,10 @@ session_start();
 // COLETAR DADOS DAS TURMAS EXISTENTES
 require_once "../../fun/_fixed.php";
 // CONEXÃO
+if (iiset($_GET['box'])) {
+    $_GET['box'] = null;
+    header("Location: usuarios_CRUD.php");
+}
 if (($_SESSION['type-user'] == 'super')) {
 $cx = db_connect();
 $_checkbox = $_GET['box'];
