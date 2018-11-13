@@ -33,6 +33,8 @@ require_once "../Constructs/header.php";
                         <a href="../Usuarios/usuarios.php">
                             Usuarios
                         </a>
+                    </li>
+                    <li>
                         <a href="../Requisicoes/requisicoes_CRUD.php">
                             Requisições
                         </a>
