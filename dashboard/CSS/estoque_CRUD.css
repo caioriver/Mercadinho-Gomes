@@ -9,8 +9,8 @@ label
     font-style: normal;
     font-weight: normal;
     line-height: normal;
-    font-size: 2.6vh;
-    
+    font-size: 15px;
+    width: 100%;
     color: #000000;
     
 }
@@ -39,7 +39,7 @@ td
 
 .form-group 
 {
-margin: 15vh 0 0 40vh;
+    margin: 15vh 0 0 40vh;
 
 }
 
@@ -48,29 +48,29 @@ margin: 15vh 0 0 40vh;
     
     border-radius: 4vh;
     width: auto;
-    margin: 5vh 10vh 0 40vh; 
+    margin: 5vh 10vw 0 40vh; 
 }
 
 .table-id 
 {
-    width: 10vh;
+    width: 10vw;
 }
 .table-nome 
 {
-    width: 40vh;
+    width: 40vw;
 }
 .table-date
 {
-    width: 30vh;
+    width: 30vw;
     margin: 0;
 }
 .table-preco
 {
-    width: 30vh;
+    width: 30vw;
 }
 .table-edit
 {
-    width: 50vh;
+    width: 50vw;
     text-align: center;
     
 }
@@ -95,37 +95,25 @@ margin: 15vh 0 0 40vh;
 }
 .imput-select 
 {
-    width: 50vh;
+    width: 20vw;
    
 }
 .imput-serach 
 {
-    width: 50vh;
-    margin-left: 10vh;  
+    width: 20vw;
     top: 1vh; 
 }
-
 .imput-order 
 {
-    width: 50vh;
-    margin-left: 20vh;
+    width: 20vw;
 }
 
-.label-serach
-{
-    margin-left: 12vh;
-}
-
-.label-order
-{
-    margin-left: 20vh;
-}
 .btn 
 {
     border-radius: 6vh;
     font-size: 4vh;
     height: 6vh;
     background-color: #0971B2;
-    padding: 0vh 1vh 0vh 1vh;
+    padding: 0vh 1vw;
     margin: 4vh 0vh 0 0;
 }
