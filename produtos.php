@@ -107,7 +107,7 @@ require_once "./fun/listar_produtos.php";
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-out">
                                     <div class="caixaInput">
-                                        <input type="button" value="Limpar Seleção" class="btn-login" onclick="history.go(0)">
+                                        <button type="reset" value="Limpar Seleção" class="btn-login" onclick="history.go(0)">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-in">
