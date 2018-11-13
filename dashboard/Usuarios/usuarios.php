@@ -77,7 +77,7 @@ require_once "../Constructs/header.php";
             <section id="cards justify-content-center">
                 <div class="row justify-content-center">
                     <div class="col-7 col-sm-4 col-md-5 col-lg-4 col-xl-4">
-                        <a href="../admin/graph.php">
+                        <a href="usuarios_criar.php">
                             <div class="card text-center border-lowblue mb-3  configImagem" >
                                 <div class="card-body text-success">
                                     <div class="justify-content-center align-content-center align-items-center col-auto imagens">
@@ -91,7 +91,7 @@ require_once "../Constructs/header.php";
                         </a>
                     </div>
                     <div class="col-7 col-sm-4 col-md-5 col-lg-4 col-xl-4">
-                        <a href="#">
+                        <a href="usuarios_CRUD.php">
                             <div class="card text-center border-lowblue mb-3  configImagem" >
                                 <div class="card-body text-success">
                                     <div class="justify-content-center align-content-center align-items-center col-auto imagens">
@@ -111,9 +111,9 @@ require_once "../Constructs/header.php";
                 
                 
             
-            <?php
-                require_once "../Constructs/footer.php"
-            ?>
-            
+    <?php
+        require_once "../Constructs/footer.php"
+    ?>
+    
 </body>
 </html>
