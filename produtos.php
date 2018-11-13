@@ -73,6 +73,7 @@ require_once "./fun/listar_produtos.php";
                         <div class="row col-12 col-md-12 col-lg-6 col-sm-12 mb-3 text-center justify-content-start">
                             <div class="col-1 mr-5">Categoria</div>
                             <select class="col-5 ml-3 btn-cadastro" name="catg" id="">
+                            <option value="all">Todos</option>
                             <option value="hortfruit">Horti-Fruti</option>
                             <option value="congelados">Congelados</option>
                             </select>
@@ -107,7 +108,7 @@ require_once "./fun/listar_produtos.php";
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-out">
                                     <div class="caixaInput">
-                                        <button type="reset" value="Limpar Seleção" class="btn-login" onclick="history.go(0)">
+                                        <input type="button" value="Limpar Seleção" class="btn-login" onclick="history.go(0)">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-in">
