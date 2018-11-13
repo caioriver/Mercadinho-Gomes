@@ -163,9 +163,9 @@
     </footer>
     <!-- Fim do Footer -->
 
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/popper.js/dist/popper.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
     <script src="js/functions.js"></script>
     <script src="js/depoimentos.js"></script>
     <script src="js/sliderdepoimentos.js"></script>

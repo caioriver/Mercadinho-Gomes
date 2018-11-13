@@ -4,15 +4,17 @@ session_start();
 require_once "../../fun/_fixed.php";
 // CONEXÃO
 if (($_SESSION['type-user'] == 'super')) {
-$cx = db_connect();
+$connect = db_connect();
 $_checkbox = $_GET['box'];
 foreach($_checkbox as $_valor){
 $query1 = 'DELETE FROM requisicoes  WHERE id = :id;';
-$insert1 = $cx->prepare($query1);
+var_dump($query1);
+$insert1 = $connect->prepare($query1);
 $insert1->bindValue(':id',$_valor);
+var_dump($_valor);
 $insert1->execute();
 $_SESSION['dbug'] = "Requisição removida";
-//  header("Location: requisicoes_CRUD.php");
+ header("Location: requisicoes_CRUD.php");
 
 }
 
