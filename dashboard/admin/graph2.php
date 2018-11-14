@@ -82,40 +82,56 @@
                     <div id="chart_div"></div>  Grafico 
                 </section> -->
 
-                <canvas id="myChart" width="300" height="300"></canvas>
+                <!-- <canvas id="myChart" width="300" height="300"></canvas> -->
 
                 <!-- <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> -->
-                <script src="Chart.js"></script>
-                <script>
-                var ctx = document.getElementById("myChart");
-                var myBarChart = new Chart(ctx, {
-                    type: 'horizontalBar',
-                    data: {
-                        labels: ["Red", "Blue", "Yellow", "Green", "Orange"],
-                        datasets: [{
-                            label: 'Dívida',
-                            data: [12, 19, 3, 5, 3],
-                            backgroundColor: [
-                                '#0971B2',
-                                '#0971B2',
-                                '#0971B2',
-                                '#0971B2',
-                                '#0971B2'
-                            ],
-                            borderWidth: 1
-                        }]
-                    },
-                    options: {
-                        scales: {
-                            yAxes: [{
-                                ticks: {
-                                    beginAtZero:true
-                                }
-                            }]
+                  
+            <section id="cards">
+                <div id="chart_div"></div> <!-- Grafico -->
+            </section>
+
+
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+                google.charts.load('current', {packages: ['corechart', 'bar']});
+                google.charts.setOnLoadCallback(drawDualX);
+
+                function drawDualX() {
+                    
+                    var data = google.visualization.arrayToDataTable([
+                        
+                        ['Usuarios', 'Debitos'],
+                        <?php while($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)): ?>
+                        ['<?php echo($list_1['nome']); ?>',<?php echo $var = ($list_1['debit']*(-1)); echo($var);?>],
+                        <?php endwhile; ?>
+                        ]);
+
+                    var materialOptions = {
+                        chart: {
+                        title: 'Usuários - Lista - maiores débitos'
+                        },
+                        hAxis: {
+                        title: 'Total Population'
+                        },
+                        vAxis: {
+                        title: 'City'
+                        },
+                        bars: 'horizontal',
+                        series: {
+                        1: {axis: '20'}
+                        },
+                        axes: {
+                        x: {
+                            20: {label: '2000 Population'}
                         }
-                    }
-                });
-                </script>
+                        }
+                    };
+
+
+                var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
+                materialChart.draw(data, materialOptions);
+                }
+            </script>
                 <?php
                     require_once "../Constructs/footer.php"
                 ?>
@@ -123,4 +139,3 @@
         </div>        
     </body>
 </html>
-
