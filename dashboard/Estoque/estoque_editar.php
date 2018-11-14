@@ -17,7 +17,7 @@
 ?>
 
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
-<link rel="stylesheet" type="text/css" href="../CSS/estoque_editar.css">
+<link rel="stylesheet" type="text/css" href="../CSS/forms.css">
 
 <html>
     <body>
