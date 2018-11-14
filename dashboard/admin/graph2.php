@@ -97,7 +97,7 @@
                 google.charts.setOnLoadCallback(drawDualX);
 
                 function drawDualX() {
-                    
+
                     var data = google.visualization.arrayToDataTable([
                         
                         ['Usuarios', 'Debitos'],
@@ -119,9 +119,9 @@
                         bars: 'horizontal',
                         series: {
                         1: {axis: '20'}
-                        },
-                        
+                        },                        
                     };
+
 
 
                 var materialChart = new google.charts.Bar(document.getElementById('chart_div'));
