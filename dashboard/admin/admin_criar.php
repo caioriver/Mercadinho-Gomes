@@ -9,7 +9,8 @@ if ($_SESSION['type-user'] != "super") {
 ?>
 
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
-<link rel="stylesheet" type="text/css" href="../CSS/usuarios_criar.css">
+<link rel="stylesheet" type="text/css" href="../CSS/forms.css">
+
 
 
 <html>
