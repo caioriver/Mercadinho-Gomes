@@ -127,7 +127,7 @@ require_once "listar_requisicoes.php";
                                     <td class="table-date"><?php echo($list_1['dadd']);?></td>
                                     <td class="table-preco"><?php echo($list_1['preco']);?></td>
                                     <td>
-                                        <input type="checkbox" value ="<?php echo($list_1['iduser']);?>" name='box[]'>
+                                        <input type="checkbox" value ="<?php echo($list_1['id']);?>" name='box[]'>
                                     </td>
                                 </tr>
                             <?php endwhile; ?>

@@ -4,7 +4,7 @@ require_once "./fun/_fixed.php";
 $connect = db_connect();
 
     if (empty($_SESSION['id'])) {
-        // header("Location: ./usuarios.php");
+        header("Location: ./usuarios.php");
     }
 $iduser = $_SESSION['id'];
 $query_0 = 'SELECT nome,id FROM usuarios WHERE id = :id;';
@@ -14,14 +14,15 @@ $stmt_0->execute();
 $list_0 = $stmt_0->fetch(PDO::FETCH_ASSOC);
 
 // pega o ID da URL
-$produto = isset($_GET['produto']) ? $_GET['produto'] : null;
-$qx = isset($_GET['qx']) ? $_GET['qx'] : null;
-var_dump($_GET['qx']);
+$produto = isset($_POST['produto']) ? $_POST['produto'] : null;
+$qx = isset($_POST['qx']) ? $_POST['qx'] : null;
+
 foreach($produto as $_valor){
     
     if($qx > '0') {    
+
     // CAPTA DADOS DE USUARIO
-    $query_1 = 'SELECT nome,id,preco,catg FROM estoque WHERE id = '.$_valor.';';
+    $query_1 = 'SELECT nome,id,preco,catg,iduser FROM reuisicoes WHERE id = '.$_valor.';';
     $stmt_1 = $connect->prepare($query_1);
     $stmt_1->execute();
     $list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC);
@@ -57,16 +58,17 @@ foreach($produto as $_valor){
     $stmt_3->execute();
 
     // ADICIONA A DIVIDA
-    $query_3 ='UPDATE usuarios SET debit = debit - :debit WHERE id = :id;';
-    $stmt_3 = $connect->prepare($query_3);
-    $stmt_3->bindValue(':id',$list_0['id']);
-    $stmt_3->bindValue(':debit',$list_1['preco']);
-    $stmt_3->execute();
+    $query_4 ='UPDATE usuarios SET debit = debit - :debit WHERE id = :id;';
+    $stmt_4 = $connect->prepare($query_4);
+    $stmt_4->bindValue(':id',$list_1['iduser']);
+    $stmt_4->bindValue(':debit',$list_1['preco']);
+    $stmt_4->execute();
     }    
 }
 
 }
 
-// header("Location: historico.php");
+var_dump($list_1);
+header("Location: historico.php");
 ?>
 

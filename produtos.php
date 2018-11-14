@@ -87,7 +87,7 @@ require_once "./fun/listar_produtos.php";
                         </div>
                     </div>
                     <div class="container">
-                        <form action="comprar.php" method="GET">
+                        <form action="comprar.php" method="POST">
                         <div class="row mb-4">
                             <?php while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
                                 <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
