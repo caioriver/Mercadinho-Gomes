@@ -80,7 +80,7 @@ $list_user = $stmt_1->fetch(PDO::FETCH_ASSOC);
     <div class="historico">
         <div class="container">
             <div class="row text-center justify-content-center">
-                <h1 class="mb-5">HISTÓRICO DE COMPRAS <?php echo'<br>NOME:'.strtoupper($list_user['nome']).'<br>DÉBITO: '.$list_user['debit'].' R$';?></h1>
+                <h1 class="mb-5">HISTÓRICO DE COMPRAS <?php echo'<br>NOME:'.strtoupper($list_user['nome']).'<br>DÉBITO R$: '.$list_user['debit'];?></h1>
             </div>
             <div class="tabela">
                 <div class="container">
