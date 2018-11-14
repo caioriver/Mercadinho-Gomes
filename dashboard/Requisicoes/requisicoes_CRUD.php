@@ -27,7 +27,7 @@ require_once "listar_requisicoes.php";
                     </li>
                     <li>
                         <a href="../Usuarios/usuarios.php">
-                            Usuarios
+                            Usuários
                         </a>
                     </li>
                     <li class="active">
