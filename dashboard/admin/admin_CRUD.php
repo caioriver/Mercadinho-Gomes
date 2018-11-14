@@ -109,7 +109,7 @@ unset($_SESSION['user-edit']);
                             <input type=submit  class="btn botao btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar múltiplos">
                         </div>
                         <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">  
-                            <button type="submit" class="btn botao btn-primary">Exportar</button>                                              
+                            <input type=button  class="btn botao btn-primary"onclick="window.location.href='admin_imprimir.php'" value="Exportar">
                         </div>
                         <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">    
                             <input type="button" value="Adicionar" class="btn botao btn-primary" onclick="window.location.href='admin_criar.php'" >

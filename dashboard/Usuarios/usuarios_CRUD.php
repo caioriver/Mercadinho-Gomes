@@ -109,7 +109,7 @@
                                 <input type=submit  class="btn botao btn-primary"onclick="window.location.href='delete_multi.php'" value="Deletar multiplos">
                             </div>
                             <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">                        
-                                <button type="submit" class="btn botao btn-primary">Exportar</button>
+                                <input type="button" value="Exportar" class="btn botao btn-primary" onclick="window.location.href='imprimir_usuarios.php'" >
                             </div>
                             <div class="col-6 col-sm-3 text-center col-md-3 col-lg-3">                        
                                 <input type="button" value="Adicionar" class="btn botao btn-primary" onclick="window.location.href='usuarios_criar.php'" >
