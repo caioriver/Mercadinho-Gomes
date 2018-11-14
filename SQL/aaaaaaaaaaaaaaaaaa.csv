@@ -1,0 +1,192 @@
+id;nome;catg;dadd;img;preco
+1000000;Cafe;congelados;12/11/2018;a46b0bd2c8e32cf5548f852a741e23832b5c5126;10
+1000001;Victor;hortfruit;13/11/2018;5fe613715a41ad601101cf5de10029d092a126db;12
+1000002;Pão;;;;0,45
+1000003;Arroz Tipo 1;Alimentos;;;3,5
+1000004;Feilão tipo 2;Alimentos;;;4
+1000005;Queimado (bala) 1;Bomboniere;;;0,15
+1000006;Queimado (bala) 2;Bomboniere;;;0,15
+1000007;Macarrão Tipo 5;;;;2,9
+1000008;Feijão tipo 3;Alimentos;;;4,2
+1000009;Arroz Tipo 5;Alimentos;;;4
+1000010;Queimado (bala) 5;Bomboniere;;;0,1
+1000011;Arroz Tipo 4;Alimentos;;;3,2
+1000012;Arroz Tipo 2;Alimentos;;;2,2
+1000013;Cerveja Tipo 2;;;;2,3
+1000014;Bombom 1;Bomboniere;;;0,7
+1000015;Caldo knorr carne;;;;1,5
+1000016;Pasta de Dente tipo 1;;;;4
+1000017;Caldo knorr galinha;;;;1,5
+1000018;Feilão tipo 1;;;;3,5
+1000019;Açucar;;;;2,89
+1000020;Sabonete;;;;1,18
+1000021;Polpa de Goiaba;;;;0,8
+1000022;Macarrão Tipo 6;;;;3,35
+1000023;Refrigerante Tipo 4 (1l);;;;3,5
+1000024;Bombom 2;Bomboniere;;;1
+1000025;Pasta de Dente tipo 3;;;;5
+1000026;Amendoim (pacote);;;;2,6
+1000027;Biscoito 10;;;;1,8
+1000028;Leite em Pó 400g;;;;8
+1000029;Refrigerante Tipo 1 (lata);;;;1,9
+1000030;Pirulito;;;;0,4
+1000031;Agua mineral 500ml;;;;1,5
+1000032;Queimado (bala) 6;Bomboniere;;;0,3
+1000033;Achocolatado 400g;;;;5,5
+1000034;Biscoito 4;;;;1,5
+1000035;Pasta de Dente tipo 2;;;;3,2
+1000036;Queimado (bala) 7;Bomboniere;;;0,5
+1000037;Polpa de Acerola;;;;0,8
+1000038;Bombom 3;Bomboniere;;;1,2
+1000039;Refrigerante Tipo 2 (lata);;;;2
+1000040;Cerveja Tipo 3;;;;1,89
+1000041;Refrigerante Tipo 5 (2l);;;;6,8
+1000042;Queimado (bala) 4;Bomboniere;;;0,2
+1000043;Biscoito 12;;;;2,2
+1000044;detergente;;;;2,3
+1000045;Salgadinho 1;Bomboniere;;;1,19
+1000046;Batata (KG);;;;2,8
+1000047;Biscoito 2;;;;2,4
+1000048;Pé de Moleque;Bomboniere;;;0,6
+1000049;Arroz Tipo 3;Alimentos;;;2,8
+1000050;Polpa de Cajá;;;;1
+1000051;Molho de Tomate;;;;2,89
+1000052;Leite em Pó 800g;;;;15
+1000053;Biscoito 6;;;;3,4
+1000054;Margarina;;;;8
+1000055;Barbeador Tipo 1;;;;2
+1000056;Lâmpada tipo 2;;;;3,6
+1000057;Biscoito 11;;;;1,6
+1000058;Macarrão Tipo 7;;;;5,5
+1000059;Suco de caixa tipo 2;;;;2,8
+1000060;Macarrão Tipo 4;;;;2,8
+1000061;Achocolatado 800g;;;;10,4
+1000062;Papel Higiênico (pacote);;;;14,89
+1000063;Polpa de Cacau;;;;1
+1000064;Leite Desnatado 1L;;;;3,8
+1000065;Jujuba 1;Bomboniere;;;1,5
+1000066;Manteiga;;;;13,1
+1000067;Sal;;;;0,7
+1000068;Bombom 4;;;;0,8
+1000069;Vinagre;;;;3
+1000070;Suco de garrafa (2L);;;;6
+1000071;Adocante;;;;5,6
+1000072;Feijão tipo 4;Alimentos;;;4,8
+1000073;Iorgute 1;;;;6,5
+1000074;Barra de Chocolate;Bomboniere;;;5,6
+1000075;Escova de dente Tipo 1;;;;2
+1000076;Creme de leite;;;;3,9
+1000077;Leite Integral 1L;;;;2,95
+1000078;Pão de Forma (pacote);;;;6
+1000079;Farinha;;;;6
+1000080;Óleo de Soja;;;;5,39
+1000081;Macarrão Tipo 8;;;;4,1
+1000082;Biscoito 1;;;;1,49
+1000083;Polpa de Manga;;;;1
+1000084;Queimado (bala) 3;Bomboniere;;;0,2
+1000085;Ovos (dúzia);;;;5
+1000086;Macarrão Tipo 1;;;;2,5
+1000087;Lâmpada tipo 1;;;;2,2
+1000088;Biscoito 5;;;;1,3
+1000089;Biscoito 7;;;;3,8
+1000090;Feijão tipo 6;Alimentos;;;5,2
+1000091;Guardanapo;;;;2,4
+1000092;Cerveja Tipo 1;;;;2,6
+1000093;Biscoito 8;;;;4,3
+1000094;Sabão em pó (1kg);Produtos de limpeza;;;10,64
+1000095;Farinha de trigo;;;;3,1
+1000096;Salgadinho 5;Bomboniere;;;3,3
+1000097;Lassanha Caseira;;;;4,9
+1000098;Banana (Dúzia);;;;7
+1000099;Salgadinho 2;Bomboniere;;;2,2
+1000100;Biscoito 9;;;;5,2
+1000101;Agua mineral 1,5l;;;;3,5
+1000102;Sal grosso;;;;5
+1000103;Iorgute 3;;;;5,2
+1000104;Jujuba 2;Bomboniere;;;2
+1000105;Achocolatado 1,2 KG;;;;15,49
+1000106;Tomate;;;;4,8
+1000107;Energetico (500ml);;;;4,5
+1000108;Barbeador Tipo 2;;;;5,6
+1000109;Milho de Pipoca;;;;3,49
+1000110;Ovos (placa);;;;10
+1000111;Vassoura Tipo 1;;;;8,9
+1000112;Desodorante;;;;8,6
+1000113;Molho Bolonhesa;;;;3,6
+1000114;Escova de dente Tipo 2;;;;6,5
+1000115;Danone;;;;4,19
+1000116;Caixa de chocolate;Bomboniere;;;8,9
+1000117;Feijão tipo 5;;;;3
+1000118;Biscoito 3;;;;2,6
+1000119;Flocão de Milho;;;;1,19
+1000120;Extrato de tomate;;;;3,49
+1000121;Macarrão Tipo 2;;;;3,19
+1000122;Suco de caixa tipo 3;;;;3,5
+1000123;Queijo Ralado;;;;3,5
+1000124;Farinha de rosca;;;;5
+1000125;Salgadinho 4;Bomboniere;;;1,8
+1000126;Tapioca (pacote);;;;6
+1000127;Alvejante;Produtos de limpeza;;;7,2
+1000128;Carne (Kg) Tipo 5;;;;16,99
+1000129;Polpa de Cupuaçu;;;;1,2
+1000130;Cebola (Kg);;;;4
+1000131;Leite Condensado;;;;4,5
+1000132;Vela (pacote);;;;6
+1000133;Algodão (pacote);;;;6,79
+1000134;Pilha;;;;6
+1000135;Salgadinho 3;Bomboniere;;;2,5
+1000136;Macarrão Tipo 9;;;;6
+1000137;Pasta de Dente tipo 4;;;;3,8
+1000138;Queijo Lanche;;;;23
+1000139;Salsicha (pacote 500g);;;;9
+1000140;Macarrão Tipo 3;;;;4,6
+1000141;Peito de Frango (kg);;;;11,9
+1000142;Inseticida;;;;8,9
+1000143;Carne (Kg) Tipo 1;;;;12,99
+1000144;Barbeador Tipo 3;;;;7,9
+1000145;Apresuntado(Kg);;;;14
+1000146;Papel toalha (pacote);;;;6,85
+1000147;Papel Alumínio (pacote);;;;3,2
+1000148;Refrigerante Tipo 6 (2l);;;;7
+1000149;Doce de banana;Bomboniere;;;4,5
+1000150;Josefina kg;;;;13
+1000151;Coxa de Frango (kg);;;;11,9
+1000152;Ketchup;;;;5,6
+1000153;Escova de dente Tipo 3;;;;9,9
+1000154;Presunto (kg);;;;18
+1000155;Leite em Pó 1,2 kg;;;;22
+1000156;Pedra Sanitária;Produtos de limpeza;;;2,2
+1000157;Suco de caixa tipo 1;;;;2,59
+1000158;Lâmpada tipo 3;;;;9
+1000159;Carne (Kg) Tipo 2;;;;13,99
+1000160;Filé de Frango kg;;;;10,9
+1000161;Maionese;;;;6,8
+1000162;Miojo Carne;;;;1,1
+1000163;Iorgute 2;;;;7
+1000164;Amaciante;;;;12,6
+1000165;Leite de Coco;;;;5,5
+1000166;Carne (Kg) Tipo 4;;;;15,99
+1000167;Refrigerante Tipo 3 (lata);;;;2,2
+1000168;Queijo prato;;;;21
+1000169;Carne (Kg) Tipo 3;;;;14,99
+1000170;Maçã (kg);;;;3,5
+1000171;Energetico (2l);;;;12
+1000172;Polpa de Umbu;;;;1,2
+1000173;Queijo Minas;;;;27
+1000174;Carne (Kg) Tipo 7;;;;20,99
+1000175;Calabresa (Kg);;;;15
+1000176;Mortadela (kg);;;;9
+1000177;Agua mineral 5l;;;;8
+1000178;Salgadinho 6;Bomboniere;;;3,8
+1000179;Barbeador Tipo 4;;;;11,5
+1000180;Miojo Frango;;;;1,15
+1000181;Carne (Kg) Tipo 8;;;;22,9
+1000182;Suco de caixa tipo 4;;;;4
+1000183;Escova sanitária;Produtos de limpeza;;;13
+1000184;Vassoura Tipo 2;;;;13
+1000185;Carne (Kg) Tipo 6;;;;18,99
+1000186;Sobrecoxa de frango (kg);;;;12
+1000187;Pepino (kg);;;;3,8
+1000188;Limpador Desengordurante;Produtos de limpeza;;;11,06
+1000189;Rodo;;;;8,2
+1000190;Pá de Lixo;;;;12,2
