@@ -42,7 +42,7 @@ if (empty($_POST)) {
         } else 
         {
             header ("Location: admin_criar.php");
-            $_SESSION['dbug'] = "Dados invválidos";
+            $_SESSION['dbug'] = "Dados inválidos";
 
             
             }
