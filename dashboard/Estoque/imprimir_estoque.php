@@ -1,5 +1,5 @@
 <?php
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $conect = db_connect();
 $query_1 = "SELECT id,nome,catg,dadd,preco FROM estoque ORDER BY id ASC;";
 $stmt_1 = $conect->prepare($query_1);
@@ -39,4 +39,4 @@ $stmt_1->execute();
 </body>
 </html>
 <?php
-toxls('estoque.xls');
+toxls('imprimir-estoque.xls');
