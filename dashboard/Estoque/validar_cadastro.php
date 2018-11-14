@@ -83,6 +83,8 @@ if (empty($_POST)) {
         $stmt_1->bindValue(':img',$fileNome);
         $stmt_1->bindValue(':preco',$_POST['preco']);
         $stmt_1->execute();
+        $debit = str_replace(",",".",$_POST['preco']);
+
 
         $_SESSION['dbug'] = "Dados cadastrados";
         header ("Location: estoque_criar.php");

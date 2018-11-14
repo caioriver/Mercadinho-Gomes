@@ -17,6 +17,7 @@ if (empty($_POST)) {
         $_SESSION['pass-e'] = $val->validarSenha($_POST['pass']);
         $_SESSION['c-pass-e'] = $val->comparaDois($_POST['c-pass'],$_POST['pass'],'Senha');
         $_SESSION['adm-pass-e'] = $val->validarSenha($_POST['adm-pass']);
+        $debit = str_replace(",",".",$_POST['debit']);
         var_dump($_SESSION['nome-e']);
         $id = $_SESSION['id-up'];
         

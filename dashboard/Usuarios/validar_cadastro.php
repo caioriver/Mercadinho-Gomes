@@ -24,7 +24,7 @@ if (empty($_POST)) {
         $_SESSION['adm-pass-e'] = $val->validarSenha($_POST['adm-pass']);
         $_SESSION['debit-e'] = $val->validarDec($_POST['debit'],'Débito');
         var_dump($_SESSION['nome-e']);
-
+        $debit = str_replace(",",".",$_POST['debit']);
         $query_1 = 'SELECT pass FROM superadmin WHERE pass = :pass;';
         $stmt_1 = $conect->prepare($query_1);
         $stmt_1->bindValue(':pass',sha1($_POST['adm-pass']));

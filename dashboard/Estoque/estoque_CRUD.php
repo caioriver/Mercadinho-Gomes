@@ -140,7 +140,7 @@ unset($_SESSION['user-edit']);
                                 <td class="table-id"><?php echo($list_1['id']);?></td>
                                 <td class="table-nome"><?php echo ''.$list_1['nome'].' - '.$list_1['catg'];?></td>
                                 <td class="table-date"><?php echo($list_1['dadd']);?></td>
-                                <td class="table-preco"><?php echo($list_1['preco']);?></td>
+                                <td class="table-preco"><?php $var = str_replace(".",".",$list_1['preco']);echo($var);?></td>
                                 <td>
                                     <a class="table-edit-icon" href="estoque_editar.php?id=<?php echo $list_1['id'];?>">
                                         <img class="form-icon" alt="edit-icon" src="../Images/edit.png" >

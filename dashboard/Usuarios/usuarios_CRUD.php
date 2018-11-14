@@ -137,7 +137,7 @@
                             <td class="table-id"> <?php echo($list_1['id']);?> </td>
                             <td class="table-nome"> <?php echo($list_1['nome']);?> </td>
                             <td class="table-date"><?php echo($list_1['dadd']);?> </td>
-                            <td class="table-preco"><?php echo($list_1['debit']);?></td>
+                            <td class="table-preco"><?php $var = str_replace(".",",",$list_1['debit']);echo($var);?></td>
                             <td>
                                 <a class="table-edit-icon" href="usuarios_editar.php?id=<?php echo $list_1['id'];?>">
                                     <img class="form-icon" alt="edit-icon" src="../Images/edit.png" >

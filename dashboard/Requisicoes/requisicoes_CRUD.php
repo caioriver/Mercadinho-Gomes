@@ -125,7 +125,7 @@ require_once "listar_requisicoes.php";
                                     <td class="table-id"><?php echo($list_1['id']);?></td>
                                     <td class="table-nome"><?php echo ''.$list_1['nomeprod'].' - '.$list_1['catg'].' - '.$list_1['nomeuser'];?></td>
                                     <td class="table-date"><?php echo($list_1['dadd']);?></td>
-                                    <td class="table-preco"><?php echo($list_1['preco']);?></td>
+                                    <td class="table-preco"><?php $var = str_replace(".",",",$list_1['preco']);echo($var);?></td>
                                     <td>
                                         <input type="checkbox" value ="<?php echo($list_1['id']);?>" name='box[]'>
                                     </td>

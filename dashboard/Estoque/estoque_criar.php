@@ -87,8 +87,17 @@ require_once "../Constructs/header.php";
                             <input required type="text" name="nome" class="form-control" placeholder="Nome do item">
                             <label class="label-nome ml-3 mt-4">Categoria</label>
                             <select class="form-control" name="cat">
-                                <option value="hortfruit">Horti-Fruti</option>
-                                <option value="congelados">Congelados</option>
+                                <option value="Higiene">Higiene e beleza</option>
+                                <option value="Limpeza">Produtos de Limpeza</option>
+                                <option value="Crus">Alimentos crus</option>
+                                <option value="Masssa">Massas</option>
+                                <option value="Mercearia">Bomboniere</option>
+                                <option value="Hortifruit">Bomboniere</option>
+                                <option value="Slaticinios">Bomboniere</option>
+                                <option value="Laticinios">Bomboniere</option>
+                                <option value="Laticinios">Bomboniere</option>
+                                <option value="Laticinios">Bomboniere</option>
+
                             </select>
 
                             <label class="label-nome ml-3 mt-4">Email do administrador</label>

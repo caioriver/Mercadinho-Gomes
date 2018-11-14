@@ -16,6 +16,8 @@ if (empty($_POST)) {
         $_SESSION['file-img-e'] = $val->validarFile($_FILES['file-img']);
         $_SESSION['preco-e'] = $val->validarDec($_POST['preco'],'Preço');
         $id = $_SESSION['id-up'];
+        $debit = str_replace(",",".",$_POST['preco']);
+
 
         $file_ex = strtolower(substr($_FILES['file-img']['name'], -4));
         $fileNome = sha1(time()).$file_ex;

@@ -23,9 +23,8 @@ if ($_SESSION['e-mail'] == NULL && $_SESSION['e-nome']) {
     $header .= "Content-type: text/html; charset=iso-8859-1\n";
     $header .="FROM: $to\n";
     mail($to,$subject,$mensage,$header);
-    echo("Mensagen enviada");
-    header("Location: /Mercadinho-gomes/index.php");
+
+    echo "<script>alert('Mensagem enviada'); onClick(window.location(0));</script>";
     } else {
     $_SESSION['dbug'] = "Erro";
-    header("Location: /Mercadinho-gomes/index.php");
     }
