@@ -18,7 +18,7 @@ $_SESSION['id-up'] = $id;
 ?>
 
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
-<link rel="stylesheet" type="text/css" href="../CSS/usuarios_editar.css">
+<link rel="stylesheet" type="text/css" href="../CSS/forms.css">
 
 <html>
 
