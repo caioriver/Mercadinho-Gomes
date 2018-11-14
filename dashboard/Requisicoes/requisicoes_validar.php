@@ -45,7 +45,7 @@ $_SESSION['dbug'] = "Requisição removida";
 }
 
 } else {
-$_SESSION['dbug'] = "Erro Tente novamente";
+$_SESSION['dbug'] = "ERRO! Tente novamente";
 header("Location: requisicoes_CRUD.php");
 }
 echo($_SESSION['dbug']);
