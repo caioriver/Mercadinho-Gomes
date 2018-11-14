@@ -21,6 +21,7 @@ CREATE TABLE requisicoes
     catg varchar (256) NOT NULL,
     dadd date NOT NULL,
     preco float NOT NULL,
+    quant float NOT NULL,
     PRIMARY KEY (id)
 
 );
@@ -39,8 +40,6 @@ CREATE TABLE usuarios
     PRIMARY KEY (id)
 
 );
-
-
 
 CREATE TABLE admin (
 
@@ -74,5 +73,6 @@ CREATE TABLE hist (
     catg varchar (256) NOT NULL,
     dadd date NOT NULL,
     preco float NOT NULL,
+    quant float NOT NULL,
     PRIMARY KEY (id)
 );

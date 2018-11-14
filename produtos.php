@@ -98,7 +98,7 @@ require_once "./fun/listar_produtos.php";
                                         <i><img class="imagem" src="icones/checked.png" alt=""></i>
                                     </label>
                                     <p>Quantidade:</p>
-                                    <input type="number" name="qx[]">
+                                    <input type="number" step="1" pattern="\d+" name="qx[]" />                                    
                                 </div>
 
                                 <?php if($a == 2) {

@@ -91,9 +91,10 @@ $stmt_0->execute();
                             <tr>
                                 <th scope="row"><?php echo($list_0['dadd']);?></th>
                                 <td><?php echo($list_0['nomeprod']);?></td>
-                                <td>Otto</td>
+                                <td><?php echo($list_0['preco']);?></td>
+                                <?php $_SESSION['prod'] = $list_0['idprod'];?>
                                 <td>
-                                    <form action="" method="POST">
+                                    <form action="recomprar.php" method="POST">
                                         <input type="submit" class="btn-login" value="Comprar">
                                     </form>
                                 </td>
