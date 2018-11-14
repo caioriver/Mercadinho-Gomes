@@ -17,10 +17,11 @@ $_SESSION['id-up'] = $id;
 
 ?>
 
-<html>
-
 <link rel="stylesheet" type="text/css" href="../CSS/navbar_dashboard.css">
+<link rel="stylesheet" type="text/css" href="../CSS/forms.css">
 
+
+<html>
     <body>
         
         <!-- NAVBAR -->
