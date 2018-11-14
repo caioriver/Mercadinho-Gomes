@@ -122,7 +122,7 @@
                                     <a href="historico.php">Ver Histórico de Compras</a>
                                 </div>
                                 <div class="op-info col-sm-1">
-                                    <a href="">Sair</a>
+                                    <a href="/fun/logoff.php">Sair</a>
                                 </div>
                             </div>
                         </div>
