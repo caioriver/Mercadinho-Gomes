@@ -97,6 +97,7 @@ require_once "./fun/listar_produtos.php";
                                         <input value="<?php echo($list_1['id']);?>" type="checkbox" name="produto[]" id="nomedoproduto">
                                         <i><img class="imagem" src="icones/checked.png" alt=""></i>
                                     </label>
+                                    <?php echo'<p>'.$list_1['nome'].' - '.$list_1['catg'].'</p>';?>
                                     <p>Quantidade:</p>
                                     <input type="number" name="qx[]">
                                 </div>

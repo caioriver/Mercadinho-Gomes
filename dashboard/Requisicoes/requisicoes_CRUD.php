@@ -130,7 +130,7 @@ require_once "listar_requisicoes.php";
                                         <input type="checkbox" value ="<?php echo($list_1['iduser']);?>" name='box[]'>
                                     </td>
                                 </tr>
-                                <?php endwhile; ?>
+                            <?php endwhile; ?>
                         </tbody>    
                     </table>
                 </div>

@@ -61,8 +61,13 @@ $val = new validacao;
                     $_SESSION['e-log-pass'] = "Senha inválida";
                     header("Location: ../usuarios.php");
                 }
+            } else {
+                $_SESSION['e-log-pass'] = "Usuário inexistente";
+                header("Location: ../usuarios.php");
+                }
+
             } 
         }
     }
-}
+
     

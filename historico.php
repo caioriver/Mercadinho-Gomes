@@ -1,6 +1,11 @@
 <?php 
 session_start();
 require_once "./fun/_fixed.php";
+$connect = db_connect();
+$query_0 = "SELECT idprod,dadd,nomeprod,preco FROM hist WHERE iduser = :iduser ORDER BY dadd DESC; ";
+$stmt_0 = $connect->prepare($query_0);
+$stmt_0->bindValue(':iduser',$_SESSION['id']);
+$stmt_0->execute();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -76,15 +81,16 @@ require_once "./fun/_fixed.php";
                         <thead>
                             <tr>
                                 <th scope="col">Data</th>
-                                <th scope="col">Pedido</th>
+                                <th scope="col">Produto</th>
                                 <th scope="col">Valor</th>
                                 <th scope="col">Repetir</th>
                             </tr>
                         </thead>
                         <tbody>
+                            <?php while ($list_0 = $stmt_0->fetch(PDO::FETCH_ASSOC)):?>
                             <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
+                                <th scope="row"><?php echo($list_0['dadd']);?></th>
+                                <td><?php echo($list_0['nomeprod']);?></td>
                                 <td>Otto</td>
                                 <td>
                                     <form action="" method="POST">
@@ -92,26 +98,7 @@ require_once "./fun/_fixed.php";
                                     </form>
                                 </td>
                             </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>
-                                    <form action="" method="POST">
-                                        <input type="submit" class="btn-login" value="Comprar">
-                                    </form>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>
-                                    <form action="" method="POST">
-                                        <input type="submit" class="btn-login" value="Comprar">
-                                    </form>
-                                </td>
-                            </tr>                        
+                            <?php endwhile;?>                           
                         </tbody>
                     </table>
                     <div class="row justify-content-around">
