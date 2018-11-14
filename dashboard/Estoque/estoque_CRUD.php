@@ -26,7 +26,7 @@ unset($_SESSION['user-edit']);
                         </li>
                         <li>
                             <a href="../Usuarios/usuarios.php">
-                                Usuarios
+                                Usuários
                             </a>
                         </li>
                         <li>
