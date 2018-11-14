@@ -67,7 +67,7 @@
                 </div>
                 <div class="col-lg-8 col-md-12 animated fadeInUp slow">
                     <h2 class="titulo mt-5 mb-3">Quem Somos?</h2>
-                    <p class="texto">O Mercado Gomes é um estabelecimento presente na vida dos nossos fregueses por mais de 8 anos, fornecendo produtos de qualidade e preços atraentes a altura de que os clientes merecem. Com localidade no Caminho das Arvores, em Salvador, e posteriormente uma filial em Itapuã, é mostrado diariamente como o Mercado Gomes opera de forma eficiente e eficaz para que as pessoas tenham o melhor consumo e atendimento que o estabelecimento pode oferecer com entregas delivery nos finais de semana. Sempre mostrando-se presente na vida dos moradores dos bairros que a loja reside.
+                    <p class="texto"> &nbsp;&nbsp;&nbsp;&nbsp;<?php require_once "Textos/Quem_somos/quem_somos.txt";?>
                     </p>
                 </div>
             </div>
@@ -84,15 +84,15 @@
                         <img class="align-self-start mr-2" src="icones/aspas-abre.png" width="25" alt="Abre aspas">
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
-                                <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;COMENTÁRIO DO CLIENTE
-                                </p>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<?php require_once "Textos/Cliente01/depoimento.txt";?>
+                            </p>
                             </div>                            
                         </div>
                             <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
                     </div>
                     <div class="sbt-meta">
-                        <p class="sbt-title">- Cliente 1</p>
+                        <p class="sbt-title"><?php require_once "Textos/Cliente01/nome.txt";?></p>
                     </div>
                 </div>
                 <div class="slide">
@@ -101,14 +101,14 @@
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
                                 <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;COMENTÁRIO DO CLIENTE
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<?php require_once "Textos/Cliente02/depoimento.txt";?>
                                 </p>
                             </div>                            
                         </div>
                             <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
                     </div>
                     <div class="sbt-meta">
-                        <p class="sbt-title">- Cliente 2</p>
+                        <p class="sbt-title"><?php require_once "Textos/Cliente02/nome.txt";?></p>
                     </div>
                 </div>
                 <div class="slide">
@@ -117,30 +117,30 @@
                         <div class="media-body">
                             <div class="sbt-text mt-0 mb-1">
                                 <p>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;COMENTÁRIO DO CLIENTE
+                                    &nbsp;&nbsp;&nbsp;&nbsp;<?php require_once "Textos/Cliente03/depoimento.txt";?>
                                 </p>
                             </div>                            
                         </div>
                         <img class="align-self-end ml-2" src="icones/aspas-fecha.png" width="25" alt="Fecha aspas">
                     </div>
                     <div class="sbt-meta">
-                        <p class="sbt-title">- Cliente 3</p>
+                        <p class="sbt-title"><?php require_once "Textos/Cliente03/nome.txt";?></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!-- Fim depoimentos -->
+    <!-- Fim depoimentos -->
 
-<!-- Mapas -->
-<div id="mapas" class="container">
-    <h2 class="titulo-mapa">Nosso Local</h2>
-    <p class="texto-mapa"><img src="icones/localização.png" width="30" alt="">Alameda dos Umbuzeiros 81, Caminho das Árvores, Salvador - BA</p>
-    <div class="map-responsive">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.800278913482!2d-38.46308618517783!3d-12.984622390847301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b171b544be3%3A0x67beac7af2449d9a!2sAlameda+dos+Umbuzeiros%2C+81+-+Caminho+das+%C3%81rvores%2C+Salvador+-+BA%2C+41820-680!5e0!3m2!1spt-BR!2sbr!4v1541981578008" allowfullscreen></iframe>
+    <!-- Mapas -->
+    <div id="mapas" class="container">
+        <h2 class="titulo-mapa">Nosso Local</h2>
+        <p class="texto-mapa"><img src="icones/localização.png" width="30" alt="">Alameda dos Umbuzeiros 81, Caminho das Árvores, Salvador - BA</p>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.800278913482!2d-38.46308618517783!3d-12.984622390847301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7161b171b544be3%3A0x67beac7af2449d9a!2sAlameda+dos+Umbuzeiros%2C+81+-+Caminho+das+%C3%81rvores%2C+Salvador+-+BA%2C+41820-680!5e0!3m2!1spt-BR!2sbr!4v1541981578008" allowfullscreen></iframe>
+        </div>
     </div>
-</div>
-<!-- Fim de Mapas -->
+    <!-- Fim de Mapas -->
 
     <!-- Footer -->
     <footer>

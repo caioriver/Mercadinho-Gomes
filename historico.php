@@ -53,6 +53,7 @@ $list_user = $stmt_1->fetch(PDO::FETCH_ASSOC);
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="index.php">Início</a>
+                            <div class="pg-atual animated fadeIn slow"></div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="QuemSomos.php">Quem Somos</a>
@@ -62,7 +63,6 @@ $list_user = $stmt_1->fetch(PDO::FETCH_ASSOC);
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="usuarios.php">Usuários</a>
-                            <div class="pg-atual animated fadeIn slow"></div>
                         </li>
                     </ul>
                 </div>
@@ -80,12 +80,8 @@ $list_user = $stmt_1->fetch(PDO::FETCH_ASSOC);
     <div class="historico">
         <div class="container">
             <div class="row text-center justify-content-center">
-                <h1 class="mb-2">HISTÓRICO DE COMPRAS </h1>
+                <h1 class="mb-5">HISTÓRICO DE COMPRAS <?php echo'<br>NOME:'.strtoupper($list_user['nome']).'<br>DÉBITO R$: '.$list_user['debit'];?></h1>
             </div>
-            <h3 class ="row mb-4 justify-content-center">
-                <?php echo'NOME:'.($list_user['nome']).
-                '<br>DÉBITO: R$ '.$list_user['debit']*(-1);?>
-            </h3>
             <div class="tabela">
                 <div class="container">
                     <table class="table table-bordered">
