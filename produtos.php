@@ -1,6 +1,6 @@
-    <?php
+<?php
     session_start();
-require_once "./fun/listar_produtos.php";
+    require_once "./fun/listar_produtos.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -81,7 +81,6 @@ require_once "./fun/listar_produtos.php";
                         </div>
                         <div class="row col-12 col-md-12 col-lg-6 col-sm-12 text-center justify-content-start">
                             <div class="col-1 mr-5">Pesquisa</div>
-                            
                                 <input type="text" name="like" class="col btn-cadastro">
                             </form>
                         </div>
@@ -107,19 +106,18 @@ require_once "./fun/listar_produtos.php";
                                 ?>
                                 </div>
                             <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-out">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="caixaInput">
-                                        <input type="button" value="Limpar Seleção" class="btn-login" onclick="history.go(0)">
+                                        <input type="button" value="Limpar Seleção" class="btn-login hvr-bounce-out" onclick="history.go(0)">
                                     </div>
                                 </div>
-                                <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-in">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="caixaInput">
-                                        <input type="submit" value="Fazer Pedido" class="btn-login">
+                                        <input type="submit" value="Fazer Pedido" class="btn-login hvr-bounce-in">
                                     </div>
                                 </div>
                             </div>  
                         </form>
-
                     </div>
                 </div>
             </div>
