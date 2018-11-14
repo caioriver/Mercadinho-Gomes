@@ -1,6 +1,6 @@
-    <?php
+<?php
     session_start();
-require_once "./fun/listar_produtos.php";
+    require_once "./fun/listar_produtos.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -9,6 +9,7 @@ require_once "./fun/listar_produtos.php";
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Mercadinho Gomes</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icones/online-shopping.ico">
         <link rel="icon" href="icones/online-shopping.ico">
 
         <!-- Bootstrap CSS -->
@@ -124,14 +125,14 @@ require_once "./fun/listar_produtos.php";
                                     ?>
                                     </div>
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-out">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="caixaInput">
-                                            <input type="button" value="Limpar Seleção" class="btn-login" onclick="history.go(0)">
+                                            <input type="button" value="Limpar Seleção" class="btn-login hvr-bounce-out" onclick="history.go(0)">
                                         </div>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 hvr-bounce-in">
+                                    <div class="col-lg-6 col-md-6 col-sm-6">
                                         <div class="caixaInput">
-                                            <input type="submit" value="Fazer Pedido" class="btn-login">
+                                            <input type="submit" value="Fazer Pedido" class="btn-login hvr-bounce-in">
                                         </div>
                                     </div>
                                 </div>  
