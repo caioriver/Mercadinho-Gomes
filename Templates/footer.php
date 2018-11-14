@@ -1,4 +1,4 @@
-<div class="redes-cor">
+<div class="redes-cor my-1">
     <div class="row justify-content-center ">
         <div class="mg-redes text-center col-sm-5 col-md-5 col-lg-3">
             <img src="icones/telephone-handle-silhouette.png" width="25">
