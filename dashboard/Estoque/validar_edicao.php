@@ -80,7 +80,7 @@ if (empty($_POST)) {
     }   
          else {
             $_SESSION['dbug'] = "Dados inválidos";
-                $_SESSION['adm-pass-e'] = "Senha inváloda";
+                $_SESSION['adm-pass-e'] = "Senha inválida";
                 header ("Location: estoque_editar.php?id=$id");
             }
 
