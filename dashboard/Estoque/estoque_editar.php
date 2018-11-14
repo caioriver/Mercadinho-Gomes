@@ -99,8 +99,18 @@
                             <input value="<?php  echo $user_1['nome'];?>" required type="text" name="nome" class="form-control" placeholder="Nome do item">
                             <label class="label-nome ml-3 mt-4">Categoria</label>
                             <select class="form-control" name="catg">
-                                <option value="hortfruit">Horti-Fruti</option>
-                                <option value="congelados">Congelados</option>
+                                <option value="Higiene">Higiene e beleza</option>
+                                <option value="Limpeza">Produtos de Limpeza</option>
+                                <option value="Crus">Alimentos crus</option>
+                                <option value="Masssa">Massas</option>
+                                <option value="Mercearia">Mercearia</option>
+                                <option value="Hortifruit">Horti-Frut</option>
+                                <option value="Slaticinios">Laticinios sem refg.</option>
+                                <option value="Laticinios">Bomboniere</option>
+                                <option value="Acougue">Açougue</option>
+                                <option value="Bebidas">Bebidas</option>
+                                <option value="Utilitarios">Utilitários</option>
+                                <option value="Outros">Outros</option>
                             </select>
 
                             <label class="label-nome ml-3 mt-4">Email do administrador</label>

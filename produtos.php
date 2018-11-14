@@ -91,7 +91,7 @@
                             <?php while ($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)):?>
                                 <div class="col-md-4 col-12 col-sm-6 justify-content-center text-center my-3">
                                     <label for="" class="image-checkbox" >
-                                        <img class="img-fluid img-produtos" src="dashboard/Estoque/images/<?php $a = 1; $a = $a+1; echo($list_1['img']);?>"
+                                        <img class="img-fluid img-thumbnail" src="dashboard/Estoque/images/<?php $a = 1; $a = $a+1; echo($list_1['img']);?>"
                                             alt="" width="300">
                                         <input value="<?php echo($list_1['id']);?>" type="checkbox" name="produto[]" id="nomedoproduto">
                                         <i><img class="imagem" src="icones/checked.png" alt=""></i>
@@ -100,11 +100,7 @@
                                     <p>Quantidade:</p>
                                     <input type="number" step="1" pattern="\d+" name="qx[]" />                                    
                                 </div>
-
-                                <?php if($a == 2) {
-                                    echo'<h1>'.$a.'</h1>';
-                                } endwhile;
-                                ?>
+                            <?php endwhile;?>
                                 </div>
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-6">

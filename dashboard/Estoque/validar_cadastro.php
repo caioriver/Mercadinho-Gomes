@@ -14,7 +14,6 @@ if (empty($_POST)) {
         $_SESSION['file-img-e'] = $val->validarFile($_FILES['file-img']);
         $_SESSION['preco-e'] = $val->validarDec($_POST['preco'],'Preço');
 
-
         $file_ex = strtolower(substr($_FILES['file-img']['name'], -4));
         $fileNome = sha1(time()).$file_ex;
         $dir = "images/";
@@ -43,12 +42,15 @@ if (empty($_POST)) {
                 {        
                 $query_1 = "INSERT INTO estoque (nome,catg,dadd,img,preco) VALUES (:nome,:catg,:dadd,:img,:preco);";
                 $stmt_1 = $conect->prepare($query_1);
+                str_replace(",",".",$_POST['preco']);
+
                 $stmt_1->bindValue(':nome',$_POST['nome']);
                 $stmt_1->bindValue(':catg',$_POST['cat']);
                 $stmt_1->bindValue(':dadd', date('y-m-d'));
                 $stmt_1->bindValue(':img',$fileNome);
                 $stmt_1->bindValue(':preco',$_POST['preco']);
                 $stmt_1->execute();
+
 
                 $_SESSION['dbug'] = "Dados cadastrados";
                 header ("Location: estoque_criar.php");
@@ -83,7 +85,6 @@ if (empty($_POST)) {
         $stmt_1->bindValue(':img',$fileNome);
         $stmt_1->bindValue(':preco',$_POST['preco']);
         $stmt_1->execute();
-        $debit = str_replace(",",".",$_POST['preco']);
 
 
         $_SESSION['dbug'] = "Dados cadastrados";

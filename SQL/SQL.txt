@@ -64,15 +64,15 @@ INSERT INTO superadmin (nome,mail,pass) VALUES ("Admin","mgomes@mgomes.com","858
 mail = mgomes@mgomes.com
 senha = mgomes10
 
-CREATE TABLE hist (
-    id int (10) NOT NULL AUTO_INCREMENT,
-    idprod int (10) NOT NULL,
-    iduser int (10) NOT NULL,
-    nomeuser varchar (256) NOT NULL,
-    nomeprod varchar (256) NOT NULL,
-    catg varchar (256) NOT NULL,
-    dadd date NOT NULL,
-    preco float NOT NULL,
-    quant float NOT NULL,
-    PRIMARY KEY (id)
-);
+    CREATE TABLE hist (
+        id int (10) NOT NULL AUTO_INCREMENT,
+        idprod int (10) NOT NULL,
+        iduser int (10) NOT NULL,
+        nomeuser varchar (256) NOT NULL,
+        nomeprod varchar (256) NOT NULL,
+        catg varchar (256) NOT NULL,
+        dadd date NOT NULL,
+        preco float NOT NULL,
+        quant float NOT NULL,
+        PRIMARY KEY (id)
+    );

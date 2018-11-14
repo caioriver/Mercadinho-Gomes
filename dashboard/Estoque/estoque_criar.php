@@ -91,12 +91,15 @@ require_once "../Constructs/header.php";
                                 <option value="Limpeza">Produtos de Limpeza</option>
                                 <option value="Crus">Alimentos crus</option>
                                 <option value="Masssa">Massas</option>
-                                <option value="Mercearia">Bomboniere</option>
-                                <option value="Hortifruit">Bomboniere</option>
-                                <option value="Slaticinios">Bomboniere</option>
+                                <option value="Mercearia">Mercearia</option>
+                                <option value="Hortifruit">Horti-Frut</option>
+                                <option value="Slaticinios">Laticinios sem refg.</option>
                                 <option value="Laticinios">Bomboniere</option>
-                                <option value="Laticinios">Bomboniere</option>
-                                <option value="Laticinios">Bomboniere</option>
+                                <option value="Acougue">Açougue</option>
+                                <option value="Bebidas">Bebidas</option>
+                                <option value="Utilitarios">Utilitários</option>
+                                <option value="Outros">Outros</option>
+
 
                             </select>
 
