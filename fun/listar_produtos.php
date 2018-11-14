@@ -1,5 +1,5 @@
 <?php
-require_once "_fixed.php";
+require_once "init.php";
 session_start();
 $connect = db_connect();
 if (empty($_POST['catg']) || $_POST['catg'] == 'all') {

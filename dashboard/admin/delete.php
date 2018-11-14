@@ -1,6 +1,6 @@
 <?php 
 require_once "../Constructs/header.php";
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $connect = db_connect();
 session_start();
 if (($_SESSION['type-user'] == 'super')) {

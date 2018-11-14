@@ -1,5 +1,5 @@
 <?php
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $conect = db_connect();
 
     $query_1 = "SELECT id,iduser,idprod,nomeuser,catg,nomeprod,dadd,preco FROM requisicoes ORDER BY id ASC;";

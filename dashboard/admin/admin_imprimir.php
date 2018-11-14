@@ -1,5 +1,5 @@
 <?php 
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $conect = db_connect();
 $query_1 = "SELECT id,nome,dadd FROM admin ORDER BY id ASC;";
 $stmt_1 = $conect->prepare($query_1);

@@ -1,7 +1,7 @@
 <?php 
 session_start();
 // COLETAR DADOS DAS TURMAS EXISTENTES
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 // CONEXÃO
 if (iiset($_GET['box'])) {
     $_GET['box'] = null;

@@ -1,5 +1,5 @@
 <?php
-require_once "_fixed.php";
+require_once "init.php";
 $connect = db_connect();
 session_start();
 $val = new validacao;

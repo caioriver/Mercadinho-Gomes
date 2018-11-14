@@ -1,7 +1,7 @@
 <!-- header -->
 <?php
 require_once "../Constructs/header.php";
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $connect = db_connect();
 // pega o ID da URL
 $id = isset($_GET['id']) ? (int) $_GET['id'] : null;
