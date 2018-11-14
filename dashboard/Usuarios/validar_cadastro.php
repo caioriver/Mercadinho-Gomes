@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $conect = db_connect();
                      
 

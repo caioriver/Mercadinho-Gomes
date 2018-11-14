@@ -1,6 +1,6 @@
 <!-- header -->
 <?php
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $conect = db_connect();
 $query_2 = "SELECT DISTINCT(catg) FROM estoque;";
 $stmt_2 = $conect->prepare($query_2);
@@ -56,5 +56,4 @@ $stmt_2->execute();
                 }
             </script>
             <?php
-            var_dump($list_1);
-            var_dump($list_2);
+          

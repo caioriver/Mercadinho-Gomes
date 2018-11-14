@@ -3,7 +3,7 @@
     if ($_SESSION['type-user'] != 'super') {
         header("Location: ../Principal/principal.php");
     }
-    require_once "../../fun/_fixed.php";
+    require_once "../../fun/init.php";
     $conect = db_connect();
     $query_1 = "SELECT nome,debit FROM usuarios ORDER BY debit ASC LIMIT 5;";
     $stmt_1 = $conect->prepare($query_1);
@@ -71,7 +71,7 @@
                         </button>
                     
                         <div class="title justify-content-center text-center">
-                            <h1>Gráfico de Débito</h1>
+                            <h1>Gráfico de Débitos</h1>
                         </div>
 
                     </div>
@@ -97,12 +97,12 @@
                 google.charts.setOnLoadCallback(drawDualX);
 
                 function drawDualX() {
-
+                    
                     var data = google.visualization.arrayToDataTable([
                         
                         ['Usuarios', 'Debitos'],
                         <?php while($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)): ?>
-                        ['<?php echo($list_1['nome']); ?>',<?php $var = ($list_1['debit']); echo($var*(-1));?>],
+                        ['<?php echo($list_1['nome']); ?>',<?php echo $var = ($list_1['debit']*(-1)); echo($var);?>],
                         <?php endwhile; ?>
                         ]);
 
@@ -119,9 +119,13 @@
                         bars: 'horizontal',
                         series: {
                         1: {axis: '20'}
-                        },                        
+                        },
+                        axes: {
+                        x: {
+                            20: {label: '2000 Population'}
+                        }
+                        }
                     };
-
 
 
                 var materialChart = new google.charts.Bar(document.getElementById('chart_div'));

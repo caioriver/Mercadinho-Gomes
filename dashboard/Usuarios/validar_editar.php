@@ -4,7 +4,7 @@ if (empty($_POST)) {
     $_SESSION['debug'] = "Não foi possível postar";
 } else {
     // VALIDADOR POR POO
-    require_once "../../fun/_fixed.php";
+    require_once "../../fun/init.php";
     $conect = db_connect();
     $val = new validacao;
 

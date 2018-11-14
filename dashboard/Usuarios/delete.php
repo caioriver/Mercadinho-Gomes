@@ -1,6 +1,6 @@
 <?php 
 require_once "../Constructs/header.php";
-require_once "../../fun/_fixed.php";
+require_once "../../fun/init.php";
 $connect = db_connect();
 if (($_SESSION['type-user'] == 'super')) {
 // pega o ID da URL
