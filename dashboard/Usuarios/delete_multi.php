@@ -3,7 +3,7 @@ session_start();
 // COLETAR DADOS DAS TURMAS EXISTENTES
 require_once "../../fun/init.php";
 // CONEXÃO
-if (iiset($_GET['box'])) {
+if (empty($_GET['box'])) {
     $_GET['box'] = null;
     header("Location: usuarios_CRUD.php");
 }
