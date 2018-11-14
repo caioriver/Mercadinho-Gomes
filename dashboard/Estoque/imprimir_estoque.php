@@ -39,4 +39,4 @@ $stmt_1->execute();
 </body>
 </html>
 <?php
-toxls('imprimir-estoque.xls');
+toxls('estoque.xls');

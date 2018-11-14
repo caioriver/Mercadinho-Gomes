@@ -101,9 +101,8 @@
                                     <input type="number" step="1" pattern="\d+" name="qx[]" />                                    
                                 </div>
 
-                                <?php if($a == 2) {
-                                    echo'<h1>'.$a.'</h1>';
-                                } endwhile;
+                                <?php
+                                 endwhile;
                                 ?>
                                 </div>
                             <div class="row">

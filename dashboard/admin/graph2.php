@@ -71,7 +71,7 @@
                         </button>
                     
                         <div class="title justify-content-center text-center">
-                            <h1>Gráfico de Débitos</h1>
+                            <h1>Gráfico de Débito</h1>
                         </div>
 
                     </div>
@@ -102,7 +102,7 @@
                         
                         ['Usuarios', 'Debitos'],
                         <?php while($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)): ?>
-                        ['<?php echo($list_1['nome']); ?>',<?php echo $var = ($list_1['debit']*(-1)); echo($var);?>],
+                        ['<?php echo($list_1['nome']); ?>',<?php $var = ($list_1['debit']); echo($var*(-1));?>],
                         <?php endwhile; ?>
                         ]);
 
@@ -120,11 +120,7 @@
                         series: {
                         1: {axis: '20'}
                         },
-                        axes: {
-                        x: {
-                            20: {label: '2000 Population'}
-                        }
-                        }
+                        
                     };
 
 

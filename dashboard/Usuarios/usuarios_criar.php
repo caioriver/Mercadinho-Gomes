@@ -87,7 +87,7 @@ require_once "../Constructs/header.php";
                         unset($_SESSION['nome-e']);
                             }
                         ?>
-                        <input type="text" name="nome" class="form-control" name="nome" placeholder="Nome completo">        
+                        <input required  type="text" name="nome" class="form-control" name="nome" placeholder="Nome completo">        
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-mail">E-mail</label>                        
@@ -95,7 +95,7 @@ require_once "../Constructs/header.php";
                                     echo '<a>'.$_SESSION['mail-e'].'</a>';
                                     unset($_SESSION['mail-e']);
                                 }?>                            
-                                <input type="email" name="mail" class="form-control imput-email" placeholder="E-mail">
+                                <input required  type="email" name="mail" class="form-control imput-email" placeholder="E-mail">
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-cpf">CPF</label>
@@ -103,7 +103,7 @@ require_once "../Constructs/header.php";
                                     echo '<br><a>'.$_SESSION['cpf-e'].'</a>';
                                     unset($_SESSION['cpf-e']);
                                 }?>
-                                <input type="text" name="cpf" class="form-control imput-cpf" placeholder="Ex: 000.000.00-00">
+                                <input required  type="text" name="cpf" class="form-control imput-cpf" placeholder="Ex: 000.000.00-00">
                             </div>
                         </div> <!--fim linha duas colunas-->
                         <div class="row">
@@ -113,7 +113,7 @@ require_once "../Constructs/header.php";
                                     echo '<a>'.$_SESSION['c-mail-e'].'</a>';
                                     unset($_SESSION['c-mail-e']);
                                 }?>
-                                <input type="email" name="c-mail" class="form-control imput-email" placeholder="Confirmar E-mail">
+                                <input required  type="email" name="c-mail" class="form-control imput-email" placeholder="Confirmar E-mail">
                             </div>        
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-tel">Telefone</label>
@@ -121,7 +121,7 @@ require_once "../Constructs/header.php";
                                     echo '<a>'.$_SESSION['tel-e'].'</a>';
                                     unset($_SESSION['tel-e']);
                                 }?>
-                                <input type="text" name="tel" class="form-control imput-cpf" placeholder="Ex: (DD) 0000-0000">
+                                <input required  type="text" name="tel" class="form-control imput-cpf" placeholder="Ex: (DD) 0000-0000">
                             </div   >
                         </div> <!--fim linha duas colunas-->
 
@@ -130,7 +130,7 @@ require_once "../Constructs/header.php";
                             echo '<a>'.$_SESSION['end-e'].'</a>';
                             unset($_SESSION['end-e']);
                         }?>        
-                        <input type="text" name="end" class="form-control" placeholder="Endereço">
+                        <input required  type="text" name="end" class="form-control" placeholder="Endereço">
                         
                         <div class="row">
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
@@ -139,7 +139,7 @@ require_once "../Constructs/header.php";
                                     echo '<a>'.$_SESSION['pass-e'].'</a>';
                                     unset($_SESSION['pass-e']);
                                 }?>  
-                                <input type="password" name="pass" class="form-control imput-senha" placeholder="Senha">
+                                <input required type="password" name="pass" class="form-control imput-senha" placeholder="Senha">
                             </div>
                             <div class="col-12 col-sm-6 col-md-6 col-lg-6">
                                 <label class="ml-4 mt-3 label-confirm-senha">Confirmar senha</label>
@@ -147,7 +147,7 @@ require_once "../Constructs/header.php";
                                     echo '<a>'.$_SESSION['c-pass-e'].'</a>';
                                     unset($_SESSION['c-pass-e']);
                                 }?>    
-                                <input type="password" name="c-pass" class="form-control imput-confirm-senha" placeholder="Confirmar senha">
+                                <input required type="password" name="c-pass" class="form-control imput-confirm-senha" placeholder="Confirmar senha">
                             </div>
                         </div> <!--fim linha duas colunas-->
 
@@ -156,13 +156,13 @@ require_once "../Constructs/header.php";
                                 echo '<a>'.$_SESSION['adm-pass-e'].'</a>';
                                 unset($_SESSION['adm-pass-e']);
                             }?>      
-                        <input type="password" name="adm-pass" class="form-control" placeholder="senha">    
+                        <input required type="password" name="adm-pass" class="form-control" placeholder="senha">    
                         <label class="ml-4 mt-3 label-debit">Débito Inicial</label>
                         <?php if (!(empty($_SESSION['debit-e']))) {
                             echo '<a>'.$_SESSION['debit-e'].'</a>';
                             unset($_SESSION['debit-e']);
                         }?>
-                        <input type="text" name="debit" class="form-control imput-debit" placeholder="Ex 00,00 (R$)">
+                        <input required type="text" name="debit" class="form-control imput-debit" placeholder="Ex 00,00 (R$)">
                         <div class="row">
                             <div class="col-6 col-sm-4 col-md-4 col-lg-4">
                                 <button type="submit" class="btn btn-primary botao bt-valid">Validar</button>
