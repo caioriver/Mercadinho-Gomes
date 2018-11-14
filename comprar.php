@@ -67,7 +67,7 @@ foreach($produto as $_valor){
     }    
 }
 
-
+//teste
 
 header("Location: historico.php");
 ?>
