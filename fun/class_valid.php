@@ -13,13 +13,13 @@ class validacao {
 		$this->msg[3] = "Nome inválido. Favor remover acentos <br />"; //NOME
 		$this->msg[4] = "Preencha o campo ".$campo." <br />"; // CAMPO VAZIO
 		$this->msg[5] = "O ".$campo." deve ter até".$max." caracteres <br />"; // M�XIMO DE CARACTERES
-		$this->msg[6] = "O ".$campo." deve ter até ".$min." caracteres <br />"; // M�NIMO DE CARACTERES
-		$this->msg[7] = "Preencha coretamente o campo senha <br />";
+		$this->msg[6] = "O ".$campo." deve ter até".$min." caracteres <br />"; // M�NIMO DE CARACTERES
+		$this->msg[7] = "Preencha corretamente o campo senha <br />";
 		$this->msg[8] = "Os valores de ".$campo." conflitam <br />";
 		$this->msg[9] = "Data inválida <br />";
 		$this->msg[10] = "Valores inválidos <br />";
 		$this->msg[11] = "Selecionar arquivo válido";
-		$this->msg[12] = "Valor inválodo, insrir valor decimal válido";
+		$this->msg[12] = "Valor inválido, inserir valor decimal válido";
 		return $this->msg[$num];
 	}
 
