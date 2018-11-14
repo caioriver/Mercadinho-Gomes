@@ -7,7 +7,7 @@ $conect = db_connect();
 
 $debit = $_POST['debit']*(-1);
 if (empty($_POST)) {
-    $_SESSION['debug'] = "Não foi possivel postar";
+    $_SESSION['debug'] = "Não foi possível postar";
 } else {
     // VALIDADOR POR POO
     
@@ -34,8 +34,8 @@ if (empty($_POST)) {
         // var_dump($superadm);       
         if (empty($superadm)) {
             header ("Location: usuarios_criar.php");
-            $_SESSION['dbug'] = "Dados invválidos";
-            $_SESSION['adm-pass-e'] = "senha inválida";
+            $_SESSION['dbug'] = "Dados inválidos";
+            $_SESSION['adm-pass-e'] = "Senha inválida";
         } else if ($_SESSION['nome-e'] == NULL && $_SESSION['mail-e'] == NULL && $_SESSION['c-mail-e'] == NULL 
             && $_SESSION['cpf-e'] == NULL && $_SESSION['tel-e'] == NULL && $_SESSION['end-e'] == NULL 
             && $_SESSION['pass-e'] == NULL && $_SESSION['c-pass-e'] == NULL && $_SESSION['adm-pass-e'] == NULL
@@ -60,7 +60,7 @@ if (empty($_POST)) {
             } else 
             {
                 header ("Location: usuarios_criar.php");
-                $_SESSION['dbug'] = "Dados invválidos";
+                $_SESSION['dbug'] = "Dados inválidos";
 
                 
                 }
