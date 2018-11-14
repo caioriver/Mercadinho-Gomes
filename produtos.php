@@ -96,6 +96,7 @@
                                         <input value="<?php echo($list_1['id']);?>" type="checkbox" name="produto[]" id="nomedoproduto">
                                         <i><img class="imagem" src="icones/checked.png" alt=""></i>
                                     </label>
+                                    <p><?php echo $list_1['nome'].'<br>Preço R$:'.$list_1['preco'];?></p>
                                     <p>Quantidade:</p>
                                     <input type="number" step="1" pattern="\d+" name="qx[]" />                                    
                                 </div>
