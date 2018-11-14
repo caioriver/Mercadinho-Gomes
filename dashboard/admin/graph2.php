@@ -102,7 +102,7 @@
                         
                         ['Usuarios', 'Debitos'],
                         <?php while($list_1 = $stmt_1->fetch(PDO::FETCH_ASSOC)): ?>
-                        ['<?php echo($list_1['nome']); ?>',<?php echo $var = ($list_1['debit']*(-1)); echo($var);?>],
+                        ['<?php echo($list_1['nome']); ?>',<?php  $var = $list_1['debit']; echo($var*-1);?>],
                         <?php endwhile; ?>
                         ]);
 
