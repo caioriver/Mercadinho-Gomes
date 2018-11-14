@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -64,7 +67,7 @@
         <div class="container-fluid">
             <div class="container">
                 <div class="caixaForm">
-                    <form action="" method="post">
+                    <form action="./fun/forget_pass.php" method="post">
                         <div class="row">
                             <div class="col-sm-12">
                                 <h1>LOGIN</h1>
@@ -74,7 +77,13 @@
                                     <div class="col-sm-12">
                                         <div class="caixaInput">
                                             <div class="textoInput">E-mail</div>
-                                            <input type="text" name="" class="entrada">
+                                            <input type="text" name="log-mail" class="entrada">
+                                            <?php
+                                                if (!(empty($_SESSION['e-log-mail']))) {
+                                                    echo '<br>' .$_SESSION['e-log-mail'];
+                                                    unset($_SESSION['e-log-mail']);
+                                                }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>
@@ -82,7 +91,13 @@
                                     <div class="col-sm-12">
                                         <div class="caixaInput">
                                             <div class="textoInput">CPF</div>
-                                            <input type="text" name="" class="entrada">
+                                            <input type="text" name="log-cpf" class="entrada">
+                                            <?php
+                                                if (!(empty($_SESSION['e-log-cpf']))) {
+                                                    echo '<br>' .$_SESSION['e-log-cpf'];
+                                                    unset($_SESSION['e-log-cpf']);
+                                                }
+                                            ?>
                                         </div>
                                     </div>
                                 </div>

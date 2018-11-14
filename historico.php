@@ -6,6 +6,13 @@ $query_0 = "SELECT idprod,dadd,nomeprod,preco FROM hist WHERE iduser = :iduser O
 $stmt_0 = $connect->prepare($query_0);
 $stmt_0->bindValue(':iduser',$_SESSION['id']);
 $stmt_0->execute();
+
+
+$query_1 = "SELECT debit,nome FROM usuarios WHERE id = :id;";
+$stmt_1 = $connect->prepare($query_1);
+$stmt_1->bindValue(':id',$_SESSION['id']);
+$stmt_1->execute();
+$list_user = $stmt_1->fetch(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -73,7 +80,7 @@ $stmt_0->execute();
     <div class="historico">
         <div class="container">
             <div class="row text-center justify-content-center">
-                <h1 class="mb-5">HISTÓRICO DE COMPRAS</h1>
+                <h1 class="mb-5">HISTÓRICO DE COMPRAS <?php echo'<br>NOME:'.strtoupper($list_user['nome']).'<br>DÉBITO: '.$list_user['debit'].' R$';?></h1>
             </div>
             <div class="tabela">
                 <div class="container">
