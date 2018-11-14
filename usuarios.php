@@ -47,7 +47,7 @@ session_start();
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link hvr-underline-from-center" href="usuarios.php">Usuários</a>
-                                <div class="pg-atual"></div>
+                                <div class="pg-atual animated fadeIn slow"></div>
                             </li>
                         </ul>
                     </div>

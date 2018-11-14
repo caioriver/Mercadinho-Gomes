@@ -46,7 +46,7 @@ $stmt_0->execute();
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="index.php">Início</a>
-                            <div class="pg-atual"></div>
+                            <div class="pg-atual animated fadeIn slow"></div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link hvr-underline-from-center" href="QuemSomos.php">Quem Somos</a>

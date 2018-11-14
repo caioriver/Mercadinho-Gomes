@@ -1,8 +1,8 @@
 <?php
 require_once "../Constructs/header.php";
-// if ($_SESSION['type-user'] != 'super') {
-//      header("Location: ../Principal/principal.php");
-// }
+if ($_SESSION['type-user'] != 'super') {
+     header("Location: ../Principal/principal.php");
+}
 require_once "../../fun/_fixed.php";
 $conect = db_connect();
 $query_1 = "SELECT nome,debit FROM usuarios ORDER BY debit ASC LIMIT 5;";
@@ -34,7 +34,7 @@ $stmt_1->execute();
                     </li>
                     <li>
                         <a href="../Usuarios/usuarios.php">
-                            Usuarios
+                            Usuários
                         </a>
                     </li>
                     <li>
@@ -71,7 +71,7 @@ $stmt_1->execute();
                     </button>
                 
                     <div class="title justify-content-center text-center">
-                        <h1>Principal</h1>
+                        <h1>Gráfico de Débitos</h1>
                     </div>
 
                 </div>

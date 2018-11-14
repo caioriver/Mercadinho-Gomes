@@ -27,7 +27,7 @@ require_once "../Constructs/header.php";
                         </li>
                         <li class="active">
                             <a href="../Usuarios/usuarios.php">
-                                Usuarios
+                                Usuários
                             </a>
                         </li>
                         <li>
