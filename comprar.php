@@ -69,6 +69,6 @@ foreach($produto as $_valor){
 
 
 
-// header("Location: historico.php");
+header("Location: historico.php");
 ?>
 

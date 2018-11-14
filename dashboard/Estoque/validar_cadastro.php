@@ -3,9 +3,9 @@ session_start();
 require_once "../../fun/_fixed.php";
 $conect = db_connect();
 
-// if (empty($_POST)) {
-//     $_SESSION['debug'] = "Não foi possivel postar";
-// } else {    
+if (empty($_POST)) {
+    $_SESSION['debug'] = "Não foi possivel postar";
+} else {    
     
     $val = new validacao;
         $_SESSION['nome-e'] = $val->validarNome($_POST['nome']);
@@ -70,5 +70,28 @@ $conect = db_connect();
         }
     } else $_SESSION['dbug'] = "Dados inválidos - Usuário não existente";
     header ("Location: estoque_criar.php");
+} else {
+   if(sha1($_POST['adm-pass']) == $superadm['pass']) {
+    if  ($_SESSION['preco-e'] == NULL && $_SESSION['nome-e'] == NULL 
+    && $_SESSION['adm-mail-e'] == NULL && $_SESSION['adm-pass-e'] == NULL)
+        {        
+        $query_1 = "INSERT INTO estoque (nome,catg,dadd,img,preco) VALUES (:nome,:catg,:dadd,:img,:preco);";
+        $stmt_1 = $conect->prepare($query_1);
+        $stmt_1->bindValue(':nome',$_POST['nome']);
+        $stmt_1->bindValue(':catg',$_POST['cat']);
+        $stmt_1->bindValue(':dadd', date('y-m-d'));
+        $stmt_1->bindValue(':img',$fileNome);
+        $stmt_1->bindValue(':preco',$_POST['preco']);
+        $stmt_1->execute();
+
+        $_SESSION['dbug'] = "Dados cadastrados";
+        header ("Location: estoque_criar.php");
+        }
+    } else {
+        $_SESSION['dbug'] = "Dados inválidos";
+        header ("Location: estoque_criar.php");  
+                
+    }
+
+   }
 }
-// }
